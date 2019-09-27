@@ -23,16 +23,34 @@ public class Condicional {
         boolean jubilado = true;
         jubilado = false;
         jubilado = (edad >= 65);
-        
+
         if (jubilado) {
             System.out.println("felicidades");
-        } 
-        else if(edad >= 18){
+        } else if (edad >= 18) {
             System.out.println("mayor ");
-        }
-        else {
+        } else {
             System.out.println("menor");
         }
+
+        System.out.println("Dime uyn numero");
+        int numero = sc.nextInt();
+
+        switch (numero) {
+            case 1:
+                System.out.println("UNO");
+            case 2:
+                System.out.println("DOS");
+                break;
+            case 3:
+                System.out.println("TRES");
+                break;
+            case 4:
+                System.out.println("CUATRO");
+                break;
+            default:
+                break;
+        }
+
     }
 
 }
