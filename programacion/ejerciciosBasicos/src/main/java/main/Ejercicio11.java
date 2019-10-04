@@ -12,13 +12,14 @@ import java.util.Random;
  * @author oscar
  */
 public class Ejercicio11 {
-    
+
     public static void main(String[] args) {
         Random r = new Random();
-        
-        for ( int i=0; i<100; i++)
-        System.out.println(r.nextInt(11)+10);
-        
+
+        for (int i = 0; i < 100; i++) {
+            System.out.println(r.nextInt(11) + 10);
+        }
+
     }
-    
+
 }
