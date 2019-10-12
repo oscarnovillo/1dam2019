@@ -8,6 +8,7 @@ public class Menu {
     Scanner sc = new Scanner(System.in);
     int opcion = 0;
 
+
     do {
       System.out.println("1. ejercicio19 pag2 ");
       System.out.println("2. ejercici20 pag2 ");
@@ -22,6 +23,7 @@ public class Menu {
           System.out.println(nombre);
           break;
         case 2:
+          nombre = "jj";
           int numero = sc.nextInt();
           System.out.println(numero);
           break;
