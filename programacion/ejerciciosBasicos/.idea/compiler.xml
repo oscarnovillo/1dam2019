@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="programacion" />
         <module name="ejercicios" />
+        <module name="Ejerciciobasicos" />
+        <module name="EjerciciosBasicos" />
         <module name="MiPrimerProyecto" />
       </profile>
     </annotationProcessing>
