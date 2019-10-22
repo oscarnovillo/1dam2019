@@ -19,6 +19,7 @@ public class ArrayAleatorio {
     int numeros[] = new int[20];
 
     rellenaRandomArray(numeros, 10);
+    
     imprimirArray(numeros);
    
     for (int i=0;i<numeros.length-1; i++)
@@ -49,6 +50,11 @@ public class ArrayAleatorio {
     return array;
   }
 
+  public static void rellenaRandomArraySort(int array[], int bound) {
+    rellenaRandomArray(array, bound);
+    Arrays.sort(array);
+  }
+  
   public static void rellenaRandomArray(int array[], int bound) {
 
     Random r = new Random();
