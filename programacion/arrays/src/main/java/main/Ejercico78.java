@@ -6,6 +6,7 @@
 package main;
 
 import java.util.Arrays;
+import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -41,6 +42,11 @@ public class Ejercico78 {
     {
       shift1(numeros);
     }
+    
+    int []nums = IntStream.generate(() -> {
+      Random r = new Random();
+      return r.nextInt(); //To change body of generated lambdas, choose Tools | Templates.
+    }).limit(10).sorted().toArray();
     
     IntStream.range(0, numeros.length).filter((value) -> {
       return (numeros[value] %2) == 0; 
