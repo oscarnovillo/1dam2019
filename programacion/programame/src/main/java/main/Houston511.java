@@ -72,7 +72,11 @@ public class Houston511 {
                     indice2 += 2;
                 }
             }
-            System.out.println(suma);
+            System.out.print(suma);
+            if (sc.hasNextInt())
+            {
+                System.out.println();
+            }
         }
     }
 }
