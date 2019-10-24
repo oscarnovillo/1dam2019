@@ -16,9 +16,11 @@ public class ArrayAleatorio {
 
   public static void main(String[] args) {
 
-    int numeros[] = new int[20];
-
-    rellenaRandomArray(numeros, 10);
+    int ordenados[] = new int [10];
+    rellenaRandomArray(ordenados, 100);
+    Arrays.sort(ordenados);
+    
+    int numeros[] = Arrays.copyOf(ordenados, 20);
     
     imprimirArray(numeros);
    
