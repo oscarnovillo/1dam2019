@@ -6,6 +6,7 @@
 package main;
 
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 import modelo.Carta;
 
@@ -32,6 +33,17 @@ public class MainCartas {
       baraja[i + 30].setPalo(4);
     }
 
+    Random r =  new Random();
+    for (int i=0; i<10000; i++)
+    {
+      int pos1 = r.nextInt(40);
+      int pos2 = r.nextInt(40);
+      Carta swap = baraja[pos1];
+      baraja[pos1] = baraja[pos2];
+      baraja[pos2] = swap;
+    }
+    
+    
     System.out.println(Arrays.toString(baraja));
     
     for (int i = 0; i < 40; i++) {
