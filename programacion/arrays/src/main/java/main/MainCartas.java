@@ -44,6 +44,28 @@ public class MainCartas {
     }
     
     
+    int[] posiciones = new int[10];
+    int contadorPosiciones = 0;
+    for (int i =0 ; i<baraja.length && contadorPosiciones <10;i++)
+    {
+      if (posiciones[baraja[i].getValor()-1] == 0)
+      {
+        posiciones[baraja[i].getValor()-1] = i+1;
+        contadorPosiciones ++;
+      }
+    }
+    
+    for (int i =baraja.length-1 ; i>=0 && contadorPosiciones <10;i--)
+    {
+      if (posiciones[baraja[i].getValor()-1] == 0)
+      {
+        posiciones[baraja[i].getValor()-1] = i+1;
+        contadorPosiciones ++;
+      }
+    }
+    
+    
+    
     System.out.println(Arrays.toString(baraja));
     
     for (int i = 0; i < 40; i++) {
