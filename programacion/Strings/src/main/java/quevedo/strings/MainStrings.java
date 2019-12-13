@@ -118,8 +118,29 @@ public class MainStrings {
       System.out.println(palabras[i]);
     }
     
+    String mi = "MI MAMA ME MIMA";
+    String miBlank = "__ ____ __ ____";
+    nuevoNombre = new StringBuilder("__ ____ __ ____");
+    
+     int indice = mi.indexOf("A");
+     
+     
+     miBlank = miBlank.substring(0,indice)+ "A"
+             +miBlank.substring(indice+1);
+   
+   
+    System.out.println(miBlank);
+    System.out.println(nuevoNombre);
+    for (int i = mi.length()-1; i >=0; i--) {
+      i = mi.lastIndexOf("M",i);
+      if (i!= -1)
+      nuevoNombre.replace(i, i+1, "M");
+     
+    }
     
     
+    
+    System.out.println(nuevoNombre.toString());
   
   }
   
