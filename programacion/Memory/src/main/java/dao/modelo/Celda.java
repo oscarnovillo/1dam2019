@@ -14,6 +14,14 @@ public class Celda {
   private EstadoCelda estado;
   private String value;
 
+  public Celda(String value) {
+    this.value = value;
+    this.estado = EstadoCelda.OCULTO;
+  }
+
+  
+  
+  
   public EstadoCelda getEstado() {
     return estado;
   }

@@ -5,10 +5,29 @@
  */
 package dao;
 
+import dao.modelo.Celda;
+
 /**
  *
  * @author oscar
  */
 public class DaoTablero {
+  
+  private Celda tablero[][];
+
+  public Celda[][] getTablero() {
+    return tablero;
+  }
+
+  public DaoTablero(int anchura,int altura) {
+    
+    this.tablero = new Celda[anchura][altura];
+  }
+
+  
+  
+  
+  
+  
   
 }
