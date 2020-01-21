@@ -10,6 +10,19 @@ package modelo;
  * @author oscar
  */
 public class Carta {
+
+  @Override
+  public String toString() {
+    String sPalo = "";
+    switch(palo)
+    {
+      case 0: sPalo = "oros";break;
+      case 1:sPalo = "copas";break;
+      case 2:sPalo = "espadas";break;
+      case 3:sPalo = "bastos";break;
+    }
+    return "("+valor + " " + sPalo+")";
+  }
   
   private int valor;
   private int palo;
