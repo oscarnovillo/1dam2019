@@ -20,4 +20,20 @@ public class Socio {
   public int hashCode() {
     return Objects.hash(nif);
   }
+
+  public String getNif() {
+    return nif;
+  }
+
+  public void setNif(String nif) {
+    this.nif = nif;
+  }
+
+  public int getTamañoCabeza() {
+    return tamañoCabeza;
+  }
+
+  public void setTamañoCabeza(int tamañoCabeza) {
+    this.tamañoCabeza = tamañoCabeza;
+  }
 }

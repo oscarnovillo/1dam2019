@@ -2,30 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="557e916c-f824-4259-a16d-299e75689924" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Collections/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Collections/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Collections/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Collections/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Collections/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Collections/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/Configuration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/modelo/Alquiler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/modelo/Documental.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/modelo/Encuesta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/modelo/FormatoPelicula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/modelo/Pedido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/modelo/Pelicula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/modelo/Producto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/modelo/VideoJuego.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/DaoAlquileres.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/DaoProductos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/modelo/Socio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/modelo/Socio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/modelo/VideoJuego.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/modelo/Videojuego.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/videoclub.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servicios/ServiciosVideoclub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servicios/ServiciosVideoclub.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -52,7 +36,10 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -97,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580455973543</updated>
       <workItem from="1580455977323" duration="37000" />
-      <workItem from="1580460503455" duration="3916000" />
+      <workItem from="1580460503455" duration="6354000" />
     </task>
     <task id="LOCAL-00001" summary="sdfsdf">
       <created>1580460590298</created>
@@ -113,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580460650020</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="sdfsdf">
+      <created>1580464639616</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1580464639616</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
