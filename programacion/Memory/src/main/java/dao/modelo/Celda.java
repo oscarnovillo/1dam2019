@@ -41,7 +41,7 @@ public class Celda {
   @Override
   public String toString() {
     if (estado == EstadoCelda.OCULTO) {
-      return "---";
+      return value;
     } else {
       return value;
     }
