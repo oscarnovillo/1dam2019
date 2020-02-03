@@ -8,12 +8,9 @@ import java.util.Map;
 
 public class DaoSocios {
 
-
     private static Map<String, Socio> socios = new HashMap<>();
 
-
     public void addSocio(Socio socio){};
-
 
     public List<Socio> getTodosSocios(){
         List<Socio> o = null;
@@ -24,8 +21,5 @@ public class DaoSocios {
     {
         return null;
     }
-
-
-
 
 }

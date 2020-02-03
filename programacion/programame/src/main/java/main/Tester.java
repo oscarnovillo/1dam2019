@@ -24,6 +24,9 @@ public class Tester {
       String entrada =   "2 3\n" +
         "10 1 1 1\n" +
         "2 1 8 2 1 1";
+String cadena = "2345698234892598";
+    System.out.println(cadena.chars().parallel().allMatch(value -> Character.isDigit(value)));
+
 
     final ByteArrayInputStream input
         = new ByteArrayInputStream(entrada.getBytes());
