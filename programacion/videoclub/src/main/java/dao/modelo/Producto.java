@@ -2,7 +2,7 @@ package dao.modelo;
 
 import java.util.List;
 
-public class Producto {
+public abstract class Producto {
 
   private String titulo;
   private List<Encuesta> encuestas;
@@ -10,7 +10,6 @@ public class Producto {
   private int cantidadAlquilada;
   private String genero;
   private double valoracionMedia;
-
 
 
   public String getTitulo() {

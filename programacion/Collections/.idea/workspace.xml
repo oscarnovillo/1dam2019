@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b342ab00-e37f-4b58-8152-7cd5f5b037b0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/quevedo/collections/main/Listas.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Memory/src/main/java/dao/DaoFaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Memory/src/main/java/dao/DaoFaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Memory/src/main/java/dao/modelo/Celda.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Memory/src/main/java/dao/modelo/Celda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Memory/src/main/java/main/MainFaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Memory/src/main/java/main/MainFaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Memory/src/main/java/main/MainMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Memory/src/main/java/main/MainMemory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Memory/src/main/java/servicios/ServiciosTablero.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Memory/src/main/java/servicios/ServiciosTablero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../videoclub/videoclub.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../videoclub/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../videoclub/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../videoclub/src/main/java/config/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../videoclub/src/main/java/config/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../videoclub/src/main/java/dao/modelo/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../videoclub/src/main/java/dao/modelo/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../videoclub/src/main/java/gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../videoclub/src/main/java/gui/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../videoclub/src/main/java/servicios/ServiciosVideoclub.java" beforeDir="false" afterPath="$PROJECT_DIR$/../videoclub/src/main/java/servicios/ServiciosVideoclub.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +47,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580455997080</updated>
       <workItem from="1580455999470" duration="13000" />
+      <workItem from="1580726889776" duration="696000" />
     </task>
     <servers />
   </component>
@@ -60,7 +59,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

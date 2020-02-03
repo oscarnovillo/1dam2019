@@ -1,5 +1,6 @@
 package servicios;
 
+import config.Configuration;
 import dao.modelo.*;
 
 import java.util.List;
@@ -32,6 +33,9 @@ public class ServiciosVideoclub {
   }
 
   public boolean alquilarProducto(Producto p, Socio s) {
+
+    double precio = Configuration.getPrecioAlquiler();
+
     return true;
   }
 

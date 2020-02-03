@@ -20,7 +20,7 @@ public class Configuration {
   }
 
   public static void setDiasAlquilerVideojuego(int diasAlquilerVideojuego) {
-    diasAlquilerVideojuego = diasAlquilerVideojuego;
+    Configuration.diasAlquilerVideojuego = diasAlquilerVideojuego;
   }
 
   public static int getDiasAlquilerPeliculas() {
