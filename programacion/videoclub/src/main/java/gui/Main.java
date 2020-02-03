@@ -1,5 +1,6 @@
 package gui;
 
+import com.github.javafaker.Faker;
 import config.Configuration;
 import dao.modelo.Documental;
 import dao.modelo.Pelicula;
@@ -33,7 +34,7 @@ public class Main {
 
     Pelicula peli1 = (Pelicula)p;
 
-
+    Faker f = new Faker();
 
 //    VideoJuego v = new Pelicula();
 //
