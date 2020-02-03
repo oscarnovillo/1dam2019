@@ -24,7 +24,7 @@ public class MainFaker {
             new HashSet<>();
     int cont=0;
     do{
-      nombresPrincesBride.add(faker.color().name());
+      nombresPrincesBride.add(faker.address().cityName());
     }while(nombresPrincesBride.size()<10);
     
     String[] nombres = 

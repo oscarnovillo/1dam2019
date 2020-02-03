@@ -19,7 +19,7 @@ public class DaoFaker {
   private String[] nombres;
 
   public DaoFaker(int size) {
-    Faker faker = new Faker(new Locale("ES"));
+    Faker faker = new Faker(new Locale("es"));
     
     Set<String> nombresPrincesBride = 
             new HashSet<>();
@@ -28,7 +28,7 @@ public class DaoFaker {
       nombresPrincesBride.add(faker.color().name());
     }while(nombresPrincesBride.size()<size);
     
-    String[] nombres = 
+    nombres = 
             nombresPrincesBride.toArray(new String[0]);
     
   }

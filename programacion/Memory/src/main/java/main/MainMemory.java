@@ -21,7 +21,11 @@ public class MainMemory {
     
     ServiciosTablero st = new ServiciosTablero(anchura,altura);
     
+    System.out.println(st.mostrarTablero());
     
+    ServiciosTablero st1 = new ServiciosTablero(3,3);
+    
+    System.out.println(st1.mostrarTablero());
     
   }
   

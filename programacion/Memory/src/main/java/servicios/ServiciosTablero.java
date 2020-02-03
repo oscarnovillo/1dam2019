@@ -18,8 +18,12 @@ import dao.modelo.EstadoCelda;
 public class ServiciosTablero {
   
   private DaoTablero daoTablero;
+  private int altura;
+  private int anchura;
 
   public ServiciosTablero(int anchura,int altura) {
+    this.altura = altura;
+    this.anchura= anchura;
     rellenarTablero( anchura, altura);
   }
 
@@ -40,6 +44,24 @@ public class ServiciosTablero {
     
   }
   
+  
+  public String mostrarTablero()
+  {
+    String tablero = "";
+    for (int i = 0; 
+            i < altura; i++) {
+      for (int j = 0; 
+              j < anchura; j++) {
+
+        tablero += 
+                " "+daoTablero.getTablero()[i][j]+" ";
+      }
+      tablero += "\n";
+      
+    }
+    
+    return tablero;
+  }
   
   
   
