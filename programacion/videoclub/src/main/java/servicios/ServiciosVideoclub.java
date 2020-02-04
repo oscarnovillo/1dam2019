@@ -26,6 +26,7 @@ public class ServiciosVideoclub {
   }
 
   public void actualizarStockProducto(Producto p, int cantidad) {
+
   }
 
   public boolean devolverProducto(Producto p, Socio socio, Encuesta e) {

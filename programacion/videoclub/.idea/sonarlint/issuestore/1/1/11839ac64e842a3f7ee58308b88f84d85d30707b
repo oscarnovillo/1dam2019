@@ -1,21 +1,2 @@
 
-Isquid:S11681"+Return an empty collection instead of null.(¥¹ï8ÿòóØÿ-
-Dsquid:S1172"&Remove these unused method parameters.(˜·¬·8î‡ÆØÿ-
-Isquid:S1168="+Return an empty collection instead of null.(¥¹ï8³µîØÿ-
-Jsquid:S1172E"-Remove this unused method parameter "genero".(ÒÕğ=8éÓîØÿ-
-Hsquid:S1172"*Remove this unused method parameter "nif".(ªœîÎ8»‘ÉØÿ-
-Psquid:S1172;"-Remove this unused method parameter "genero".(…«ìşÿÿÿÿ8³µîØÿ-
-Isquid:S11686"+Return an empty collection instead of null.(¥¹ï8ØÛôØÿ-
-Isquid:S1168L"+Return an empty collection instead of null.(¥¹ï8à¹¿Øÿ-
-Isquid:S1168G"+Return an empty collection instead of null.(¥¹ï8éÓîØÿ-
-Nsquid:S1481%"+Remove this unused "precio" local variable.(ª¡»µşÿÿÿÿ8ÛŞÁÕ€.
-Ÿsquid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(şÙ„è8‘Õ¸Øÿ-
-Osquid:S1172",Remove this unused method parameter "socio".(§Ä¬»şÿÿÿÿ8Ù…¶Øÿ-
-Ksquid:S1172@"-Remove this unused method parameter "genero".( êèê8ŒÑïØÿ-
-Isquid:S1172#"&Remove these unused method parameters.(íÜšşıÿÿÿÿ8äÇØÿ-
-]squid:S1854%":Remove this useless assignment to local variable "precio".(ª¡»µşÿÿÿÿ8ÛŞÁÕ€.
-Msquid:S1172"/Remove this unused method parameter "producto".(´äá²8Âü³Øÿ-
-Isquid:S1168,"+Return an empty collection instead of null.(¥¹ï8ûÚòØÿ-
-Isquid:S1168B"+Return an empty collection instead of null.(¥¹ï8ŒÑïØÿ-
-Isquid:S1168Q"+Return an empty collection instead of null.(¥¹ï8Ÿ÷¿Øÿ-
-Osquid:S1172",Remove this unused method parameter "socio".(ÆÑ¹Èúÿÿÿÿ8Ó®¯Øÿ-
+^squid:S2094"BRemove this empty class, write its code or make it an "interface".(•ò×ıÿÿÿÿ

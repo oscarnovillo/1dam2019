@@ -1,24 +1,2 @@
 
-Isquid:S14812"&Remove this unused "c" local variable.(Ğâ£»ûÿÿÿÿ8‹£™Ö€.
-Lsquid:S14813")Remove this unused "date" local variable.(”Ç©šùÿÿÿÿ8ÆÄ—Ö€.
-Psquid:S1481,"2Remove this unused "fechaMasUnDia" local variable.(©ìæ8‘©¢Ö€.
-isquid:CommentedOutCodeLine'"<This block of commented-out lines of code should be removed.(¥Ğ‰“8áìõ×ÿ-
-isquid:CommentedOutCodeLine)"<This block of commented-out lines of code should be removed.(Ïè’8áìõ×ÿ-
-Xsquid:S18542"5Remove this useless assignment to local variable "c".(Ğâ£»ûÿÿÿÿ8‹£™Ö€.
-_squid:S1854,"ARemove this useless assignment to local variable "fechaMasUnDia".(©ìæ8‘©¢Ö€.
-V
-squid:S106/"9Replace this use of System.out or System.err by a logger.(¶‹‡¤8Âü­Ö€.
-[squid:S18543"8Remove this useless assignment to local variable "date".(”Ç©šùÿÿÿÿ8ı‡˜Ö€.
-lsquid:UselessImportCheck"<Remove this unused import 'java.time.temporal.TemporalUnit'.(¨çùÿÿÿÿÿÿ8·ö¾Ö€.
-Ssquid:S1854%"5Remove this useless assignment to local variable "f".(î·Üˆ8·ö¾Ö€.
-Wsquid:S1854#"9Remove this useless assignment to local variable "peli1".(ŞÎ…§8·ö¾Ö€.
-Ysquid:S1854!"6Remove this useless assignment to local variable "p1".(×ééáşÿÿÿÿ8·ö¾Ö€.
-Vsquid:S1854"8Remove this useless assignment to local variable "docu".(¾Ğñ·8·ö¾Ö€.
-Ssquid:S1854"5Remove this useless assignment to local variable "d".(¡Ú¶Ù8·ö¾Ö€.
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(æ÷Œıÿÿÿÿ8·ö¾Ö€.
-Dsquid:S1481"&Remove this unused "d" local variable.(¡Ú¶Ù8·ö¾Ö€.
-Gsquid:S1481")Remove this unused "docu" local variable.(¾Ğñ·8·ö¾Ö€.
-Jsquid:S1481!"'Remove this unused "p1" local variable.(×ééáşÿÿÿÿ8·ö¾Ö€.
-Hsquid:S1481#"*Remove this unused "peli1" local variable.(ŞÎ…§8·ö¾Ö€.
-Dsquid:S1481%"&Remove this unused "f" local variable.(î·Üˆ8·ö¾Ö€.
+Ysquid:S2094"BRemove this empty class, write its code or make it an "interface".(àªÅö

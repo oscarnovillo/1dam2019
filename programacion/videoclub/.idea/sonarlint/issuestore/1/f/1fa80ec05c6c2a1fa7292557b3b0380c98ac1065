@@ -1,5 +1,2 @@
 
-wsquid:S00116"XRename this field "tamaÃ±oCabeza" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ¯šë8Áã¸Öÿ-
-rsquid:S00100 "NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸Ç’©ÿÿÿÿÿ8íáåØÿ-
-psquid:S00117$"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìİ½¼8íáåØÿ-
-msquid:S00100$"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìİ½¼8íáåØÿ-
+Ysquid:S2094"BRemove this empty class, write its code or make it an "interface".(ÖìÑÜ

@@ -6,6 +6,7 @@
 package quevedo.strings;
 
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 /**
  *
@@ -57,7 +58,7 @@ public class MainStrings {
       System.out.println(letra);
       
     }
-    
+
     String cadena = nuevoNombre.toString();
     System.out.println(cadena.toUpperCase());
     cadena = cadena.toLowerCase();
@@ -137,11 +138,8 @@ public class MainStrings {
       nuevoNombre.replace(i, i+1, "M");
      
     }
-    
-    
-    
+
     System.out.println(nuevoNombre.toString());
-  
   }
   
   
