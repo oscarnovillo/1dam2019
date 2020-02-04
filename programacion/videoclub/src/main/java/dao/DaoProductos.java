@@ -12,11 +12,14 @@ import java.util.stream.Collectors;
 public class DaoProductos {
 
 
-  private static Map<String, Producto> productosGenero;
+  private static List<Producto> productosGenero;
 
 
   public List<Pelicula> getTodasPeliculas(){
-    return productosGenero.values().stream().filter(producto -> producto instanceof  Pelicula).map(producto -> (Pelicula)producto).collect(Collectors.toList());
+    return productosGenero.stream()
+        .filter(producto -> producto instanceof  Pelicula)
+        .map(producto -> (Pelicula)producto)
+        .collect(Collectors.toList());
   }
 
   public List<Videojuego> getTodosVideojuegos() {
@@ -25,9 +28,11 @@ public class DaoProductos {
 
 
   public List<Documental> getTodosDocumentales() {
-    return productosGenero.values().stream()
-        .filter(producto -> !(producto instanceof  Pelicula) && (producto instanceof  Documental))
-        .map(producto -> (Documental)producto).collect(Collectors.toList());
+    return productosGenero.stream()
+        .filter(producto -> !(producto instanceof  Pelicula)
+            && (producto instanceof  Documental))
+        .map(producto -> (Documental)producto)
+        .collect(Collectors.toList());
   }
 
 

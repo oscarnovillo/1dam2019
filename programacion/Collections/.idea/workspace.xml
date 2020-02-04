@@ -2,11 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b342ab00-e37f-4b58-8152-7cd5f5b037b0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../videoclub/.idea/libraries/Maven__com_github_javafaker_javafaker_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../videoclub/.idea/libraries/Maven__com_github_mifmif_generex_1_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../videoclub/.idea/libraries/Maven__dk_brics_automaton_automaton_1_11_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../videoclub/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../videoclub/.idea/libraries/Maven__org_yaml_snakeyaml_android_1_23.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arrays/src/main/java/modelo/Carta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../arrays/src/main/java/modelo/Carta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../programame/src/main/java/main/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/../programame/src/main/java/main/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../videoclub/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" afterPath="$PROJECT_DIR$/../videoclub/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../videoclub/.idea/sonarlint/issuestore/1/1/11839ac64e842a3f7ee58308b88f84d85d30707b" beforeDir="false" afterPath="$PROJECT_DIR$/../videoclub/.idea/sonarlint/issuestore/1/1/11839ac64e842a3f7ee58308b88f84d85d30707b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../videoclub/.idea/sonarlint/issuestore/1/f/1fa80ec05c6c2a1fa7292557b3b0380c98ac1065" beforeDir="false" afterPath="$PROJECT_DIR$/../videoclub/.idea/sonarlint/issuestore/1/f/1fa80ec05c6c2a1fa7292557b3b0380c98ac1065" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../videoclub/.idea/sonarlint/issuestore/d/9/d92299945c518dbc454600ef95722b7b2e2a9cb2" beforeDir="false" afterPath="$PROJECT_DIR$/../videoclub/.idea/sonarlint/issuestore/d/9/d92299945c518dbc454600ef95722b7b2e2a9cb2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../videoclub/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../videoclub/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../videoclub/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../videoclub/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../videoclub/src/main/java/config/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../videoclub/src/main/java/config/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../videoclub/src/main/java/dao/modelo/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../videoclub/src/main/java/dao/modelo/Producto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../videoclub/src/main/java/gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../videoclub/src/main/java/gui/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../videoclub/src/main/java/dao/DaoAlquileres.java" beforeDir="false" afterPath="$PROJECT_DIR$/../videoclub/src/main/java/dao/DaoAlquileres.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../videoclub/src/main/java/dao/DaoProductos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../videoclub/src/main/java/dao/DaoProductos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../videoclub/src/main/java/dao/DaoSocios.java" beforeDir="false" afterPath="$PROJECT_DIR$/../videoclub/src/main/java/dao/DaoSocios.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../videoclub/src/main/java/servicios/ServiciosVideoclub.java" beforeDir="false" afterPath="$PROJECT_DIR$/../videoclub/src/main/java/servicios/ServiciosVideoclub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../videoclub/videoclub.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../videoclub/videoclub.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,15 +28,21 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1X9Qnb5JZiTXaO9RwtVzetoSKvy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../videoclub" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -48,7 +68,23 @@
       <updated>1580455997080</updated>
       <workItem from="1580455999470" duration="13000" />
       <workItem from="1580726889776" duration="696000" />
+      <workItem from="1580801285425" duration="251000" />
     </task>
+    <task id="LOCAL-00001" summary="asdasd">
+      <created>1580801396606</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580801396606</updated>
+    </task>
+    <task id="LOCAL-00002" summary="asdasd">
+      <created>1580801418373</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580801418373</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -66,5 +102,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="asdasd" />
+    <option name="LAST_COMMIT_MESSAGE" value="asdasd" />
   </component>
 </project>

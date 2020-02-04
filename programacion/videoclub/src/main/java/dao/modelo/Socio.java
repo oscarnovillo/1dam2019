@@ -7,6 +7,13 @@ public class Socio {
   private String nif;
   private int tamañoCabeza;
 
+  public Socio() {
+  }
+
+  public Socio(String nif, int tamañoCabeza) {
+    this.nif = nif;
+    this.tamañoCabeza = tamañoCabeza;
+  }
 
   @Override
   public boolean equals(Object o) {
@@ -15,6 +22,8 @@ public class Socio {
     Socio socio = (Socio) o;
     return Objects.equals(nif, socio.nif);
   }
+
+
 
   @Override
   public int hashCode() {

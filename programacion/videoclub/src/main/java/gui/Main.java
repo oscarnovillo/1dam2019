@@ -5,6 +5,8 @@ import config.Configuration;
 import dao.modelo.Documental;
 import dao.modelo.Pelicula;
 import dao.modelo.Producto;
+import dao.modelo.Socio;
+import servicios.ServiciosVideoclub;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -21,6 +23,7 @@ public class Main {
 
   public static void main(String[] args) {
 
+    setup();
     System.out.println(Configuration.getPrecioAlquiler());
 
     Configuration.setDiasAlquilerPeliculas(34);
@@ -32,7 +35,7 @@ public class Main {
 
     Producto p1 = peli;
 
-    Pelicula peli1 = (Pelicula)p;
+    //Pelicula peli1 = (Pelicula)p;
 
     Faker f = new Faker();
 
@@ -46,15 +49,47 @@ public class Main {
     LocalDateTime time = LocalDateTime.of(2010,10,1,0,0,0);
     System.out.println(time.plusYears(20).isAfter(LocalDateTime.now()));
 
+    // addSocio
+    Socio socio = new Socio("",100);
 
-    Calendar c = Calendar.getInstance();
-    Date date = new Date();
+    Socio socio2 = new Socio();
+    socio2.setNif("89898");
+    socio2.setTamañoCabeza(10);
+
+    ServiciosVideoclub sv = new ServiciosVideoclub();
+
+    boolean añadido = sv.addSocio(socio);
+    if (!añadido )
+    {
+      System.out.println("soico ya existe");
+    }
+    añadido = sv.addSocio(socio);
+    if (!añadido )
+    {
+      System.out.println("soico ya existe a la segunda");
+    }
+
+    // add Producto
+
+
+
+
+
 
 
 
 
   }
 
+
+  public static void setup()
+  {
+    ServiciosVideoclub sv = new ServiciosVideoclub();
+    sv.addSocio(new Socio("kk",90));
+    sv.addProducto(new Documental());
+
+
+  }
 
 
 }

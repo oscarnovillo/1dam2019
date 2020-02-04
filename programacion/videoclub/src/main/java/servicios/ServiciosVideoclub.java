@@ -1,6 +1,7 @@
 package servicios;
 
 import config.Configuration;
+import dao.DaoSocios;
 import dao.modelo.*;
 
 import java.util.List;
@@ -9,7 +10,8 @@ public class ServiciosVideoclub {
 
   // add socio
   public boolean addSocio(Socio socio) {
-    return true;
+    DaoSocios daoSocio =  new DaoSocios();
+    return daoSocio.addSocio(socio);
   }
 
   // borrarSocio
@@ -29,11 +31,11 @@ public class ServiciosVideoclub {
 
   }
 
-  public boolean devolverProducto(Producto p, Socio socio, Encuesta e) {
+  public boolean devolverProducto(String nifSocio, Encuesta e) {
     return true;
   }
 
-  public boolean alquilarProducto(Producto p, Socio s) {
+  public boolean alquilarProducto(Producto p, String nifSocio) {
 
     double precio = Configuration.getPrecioAlquiler();
 
@@ -55,14 +57,12 @@ public class ServiciosVideoclub {
     return null;
   }
 
-
-
-  public List<Documental> getPeliculasPorGenero(String genero)
+  public List<Pelicula> getPeliculasPorGenero(String genero)
   {
     return null;
   }
 
-  public List<Documental> getVideojuegosPorGenero(String genero)
+  public List<Videojuego> getVideojuegosPorGenero(String genero)
   {
     return null;
   }

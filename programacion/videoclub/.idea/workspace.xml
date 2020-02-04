@@ -2,32 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89cd982e-3a45-4fd0-b811-839f87d85926" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Strings/Strings.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../arrays/arrays.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_javafaker_javafaker_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_mifmif_generex_1_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dk_brics_automaton_automaton_1_11_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_android_1_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/11839ac64e842a3f7ee58308b88f84d85d30707b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/f/1fa80ec05c6c2a1fa7292557b3b0380c98ac1065" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/b/ab0c988a9fe6aaeda648b23bde79341b65176e22" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c607beb902205b702b24253876ccb0c9ceff58bd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d92299945c518dbc454600ef95722b7b2e2a9cb2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/videoclub.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Strings/src/main/java/quevedo/strings/MainStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Strings/src/main/java/quevedo/strings/MainStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../arrays/src/main/java/modelo/Carta.java" beforeDir="false" afterPath="$PROJECT_DIR$/../arrays/src/main/java/modelo/Carta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../programame/src/main/java/main/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/../programame/src/main/java/main/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Collections/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Collections/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/DaoAlquileres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DaoAlquileres.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/DaoProductos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DaoProductos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/DaoSocios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DaoSocios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/modelo/Socio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/modelo/Socio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servicios/ServiciosVideoclub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servicios/ServiciosVideoclub.java" afterDir="false" />
     </list>
     <list id="8b51ef94-b3a6-4348-b27f-9f09c0080fed" name="Apply: " comment="jjj" />
@@ -106,7 +87,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="557e916c-f824-4259-a16d-299e75689924" name="Default Changelist" comment="" />
+      <changelist id="89cd982e-3a45-4fd0-b811-839f87d85926" name="Default Changelist" comment="" />
       <created>1580455973543</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -114,6 +95,7 @@
       <workItem from="1580455977323" duration="37000" />
       <workItem from="1580460503455" duration="6354000" />
       <workItem from="1580725448251" duration="438000" />
+      <workItem from="1580801556338" duration="4227000" />
     </task>
     <task id="LOCAL-00001" summary="sdfsdf">
       <created>1580460590298</created>
