@@ -11,3 +11,5 @@ _
 videoclub.iml,a\b\ab0c988a9fe6aaeda648b23bde79341b65176e22
 K
 src/main/java/gui/Main.java,d\9\d92299945c518dbc454600ef95722b7b2e2a9cb2
+T
+$src/main/java/dao/DaoAlquileres.java,c\9\c9d284998984aade1c39f118957a07e0b23f9c3d

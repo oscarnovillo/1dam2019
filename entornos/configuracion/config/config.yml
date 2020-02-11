@@ -1,0 +1,15 @@
+## YAML Template.
+
+clave: valor
+manzanas: 20
+frutas:
+  - peras
+  - manzanas
+  - kiwis
+alumnos:
+  - nombre: juan
+    direccion: kk
+    fecha: 2000-01-01
+  - nombre: pedro
+    direccion: ll
+    fecha: 2000-01-30

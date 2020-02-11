@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89cd982e-3a45-4fd0-b811-839f87d85926" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Collections/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Collections/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/DaoAlquileres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DaoAlquileres.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/DaoProductos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DaoProductos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/DaoSocios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DaoSocios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/modelo/Socio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/modelo/Socio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servicios/ServiciosVideoclub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servicios/ServiciosVideoclub.java" afterDir="false" />
     </list>
     <list id="8b51ef94-b3a6-4348-b27f-9f09c0080fed" name="Apply: " comment="jjj" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,6 +10,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -35,6 +31,9 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1X9QkYaYj8RVTskS1h7XaYyH8Ho" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -96,6 +95,8 @@
       <workItem from="1580460503455" duration="6354000" />
       <workItem from="1580725448251" duration="438000" />
       <workItem from="1580801556338" duration="4227000" />
+      <workItem from="1580919700303" duration="596000" />
+      <workItem from="1581007348045" duration="1213000" />
     </task>
     <task id="LOCAL-00001" summary="sdfsdf">
       <created>1580460590298</created>
