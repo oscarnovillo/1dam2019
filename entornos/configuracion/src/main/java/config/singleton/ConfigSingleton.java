@@ -19,6 +19,7 @@ import config.LocalDateYamlConstructor;
 import config.modelo.Alumno;
 import org.yaml.snakeyaml.Yaml;
 
+
 /**
  *
  * @author oscar
@@ -33,13 +34,17 @@ public class ConfigSingleton {
     public static ConfigSingleton getInstance() {
         if (instance == null) {
             try {
+                instance = new ConfigSingleton();
                 Yaml yaml = new Yaml(new LocalDateYamlConstructor());
-                instance = yaml.loadAs(new FileInputStream("config/config.yml"),
-                         ConfigSingleton.class);
-                instance.appProps = new Properties();
-                instance.appProps.load(new FileInputStream("config/config.properties"));
 
-                instance.config = yaml.loadAs(new FileInputStream("config/config.yml"),
+                Properties p = new Properties();
+                ConfigYaml y = new ConfigYaml();
+                p.load(new FileInputStream("config/config.properties"));
+                y.setClave((String)p.get("clave"));
+                y.setManzanas(Integer.parseInt((String)
+                    p.get("manzanas")));
+                instance.config = yaml.loadAs(
+                    new FileInputStream("config/config.yml"),
                          ConfigYaml.class);
             } catch (FileNotFoundException ex) {
                 Logger.getLogger(ConfigSingleton.class.getName()).log(Level.SEVERE, null, ex);
@@ -51,11 +56,7 @@ public class ConfigSingleton {
         return instance;
     }
 
-    private Properties appProps;
 
-    public Properties getAppProps() {
-        return appProps;
-    }
 
     private ConfigYaml config;
 
@@ -63,41 +64,10 @@ public class ConfigSingleton {
         return config;
     }
 
-    private String clave;
-    private int manzanas;
-    private List<String> frutas;
-    private List<Alumno> alumnos;
-
-    public List<Alumno> getAlumnos() {
-        return alumnos;
-    }
-
-    public void setAlumnos(List<Alumno> alumnos) {
-        this.alumnos = alumnos;
-    }
-
-    public List<String> getFrutas() {
-        return frutas;
-    }
-
-    public void setFrutas(List<String> frutas) {
-        this.frutas = frutas;
-    }
-
-    public int getManzanas() {
-        return manzanas;
-    }
-
-    public void setManzanas(int manzanas) {
-        this.manzanas = manzanas;
-    }
 
     public String getClave() {
-        return clave;
+        return config.getClave();
     }
 
-    public void setClave(String clave) {
-        this.clave = clave;
-    }
 
 }

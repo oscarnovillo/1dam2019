@@ -1,2 +1,3 @@
 
-^squid:S2094"BRemove this empty class, write its code or make it an "interface".(°û¦ üÿÿÿÿ
+|squid:S1488"YImmediately return this expression instead of assigning it to the temporary variable "o".(Í­Å¥ûÿÿÿÿ8ó¸ĞÒ.
+Hsquid:S1172"*Remove this unused method parameter "nif".(¯¶È™8ó¸ĞÒ.

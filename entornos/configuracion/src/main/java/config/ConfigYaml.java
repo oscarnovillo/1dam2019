@@ -18,8 +18,17 @@ public class ConfigYaml {
   
   private String clave;
   private int manzanas;
+  private int pp;
   private List<String> frutas;
   private List<Alumno> alumnos;
+
+  public int getPp() {
+    return pp;
+  }
+
+  public void setPp(int pp) {
+    this.pp = pp;
+  }
 
   public List<Alumno> getAlumnos() {
     return alumnos;
@@ -29,8 +38,6 @@ public class ConfigYaml {
     this.alumnos = alumnos;
   }
   
-  
-
   public List<String> getFrutas() {
     return frutas;
   }
@@ -57,7 +64,14 @@ public class ConfigYaml {
   public void setClave(String clave) {
     this.clave = clave;
   }
-  
-  
-  
+
+  @Override
+  public String toString() {
+    return "ConfigYaml{" +
+        "clave='" + clave + '\'' +
+        ", manzanas=" + manzanas +
+        ", frutas=" + frutas +
+        ", alumnos=" + alumnos +
+        '}';
+  }
 }

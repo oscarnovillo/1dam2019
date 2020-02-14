@@ -1,2 +1,3 @@
 
-^squid:S2094"BRemove this empty class, write its code or make it an "interface".(ÒƒÆÍıÿÿÿÿ
+Zsquid:UselessImportCheck	"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8«¶ĞÒ.
+Isquid:S1168"+Return an empty collection instead of null.(¥¹ï8«¶ĞÒ.

@@ -1,5 +1,6 @@
 package dao.modelo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Producto {
@@ -11,6 +12,26 @@ public abstract class Producto {
   private String genero;
   private double valoracionMedia;
 
+  public Producto(String titulo, int cantidad, String genero, double valoracionMedia) {
+    encuestas = new ArrayList<>();
+    this.cantidadAlquilada = 0;
+    this.titulo = titulo;
+    this.cantidad = cantidad;
+    this.genero = genero;
+    this.valoracionMedia = valoracionMedia;
+  }
+
+  @Override
+  public String toString() {
+    return "" +
+        "titulo='" + titulo + '\'' +
+        ", encuestas=" + encuestas +
+        ", cantidad=" + cantidad +
+        ", cantidadAlquilada=" + cantidadAlquilada +
+        ", genero='" + genero + '\'' +
+        ", valoracionMedia=" + valoracionMedia
+        ;
+  }
 
   public String getTitulo() {
     return titulo;
@@ -22,10 +43,6 @@ public abstract class Producto {
 
   public List<Encuesta> getEncuestas() {
     return encuestas;
-  }
-
-  public void setEncuestas(List<Encuesta> encuestas) {
-    this.encuestas = encuestas;
   }
 
   public int getCantidad() {

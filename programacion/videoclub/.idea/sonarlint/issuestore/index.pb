@@ -13,3 +13,13 @@ K
 src/main/java/gui/Main.java,d\9\d92299945c518dbc454600ef95722b7b2e2a9cb2
 T
 $src/main/java/dao/DaoAlquileres.java,c\9\c9d284998984aade1c39f118957a07e0b23f9c3d
+S
+#src/main/java/dao/DaoProductos.java,7\9\79423c4c27d8f6cf2c79faa3e94b4f4c1be33b98
+T
+$src/main/java/dao/modelo/Pedido.java,b\e\beddaba816dfc3dd295e6e70453965e98890e2ce
+V
+&src/main/java/dao/modelo/Pelicula.java,e\3\e30e4389a5829c4f1beeb7d19cd7db8eb36fdcd1
+V
+&src/main/java/dao/modelo/Producto.java,4\b\4b4ffe0f2aa6fad833a66e953e6eae95e3bbc15e
+X
+(src/main/java/dao/modelo/Documental.java,e\5\e501757b82ec08441ed532476432f5ddede3a07e
