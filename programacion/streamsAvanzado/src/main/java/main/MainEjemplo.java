@@ -10,11 +10,11 @@ import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.counting;
 
-public class Main {
+public class MainEjemplo {
 
   public static void main(String[] args) {
 
-    Faker f = new Faker();
+
     setupClienteCuentas();
     ServiciosPedido sp = new ServiciosPedido();
 
@@ -29,11 +29,14 @@ public class Main {
 
 
     // Clientes que tienen mas cuentas o iguales a la media.
-    double media = clientes.stream().mapToInt(value -> value.getCuentas().size()).average().orElse(0);
+    final double media = clientes.stream().mapToInt(value -> value.getCuentas().size()).average().getAsDouble();
+
     System.out.println(media);
     System.out.println(clientes.stream()
         .filter(cliente -> cliente.getCuentas().size() >= media)
         .collect(Collectors.toList()).size());
+
+
 
     double mediaCuentas = clientes.stream()
         .flatMap(cliente -> cliente.getCuentas().stream())
