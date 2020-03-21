@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function tabla(alto, ancho)
+            {
+                var tabla = "<table border=1>";
+
+                for (var filas = 0; filas < alto; filas++)
+                {
+                    tabla += "<tr>";
+                    for (var columnas = 0; columnas < ancho; columnas++)
+                    {
+                        tabla += "<td id='" + filas + "_" + columnas + "'>" + filas + " " + columnas + "</td>";
+                    }
+
+                    tabla += "</tr>";
+                }
+                tabla += "</table>";
+
+                document.getElementById("tabla").innerHTML = tabla;
+                document.getElementById("1_1").innerHTML = "CONSEGUIDO";
+            }
+
+
+            var aleatorio = Math.floor(Math.random() * 11); 
+            function adivinaNumero()
+            {
+                var guess = document.getElementById("textNumero").value;
+                document.getElementById("boton").value = "numero nuevo";
+                if (guess == aleatorio)
+                {
+                    alert("ACERTADO");
+                }
+                else if (guess > aleatorio)
+                    alert("el numero es menor");
+                else
+                    alert("el numero es mayor");
+            }
+            
+            function verOpcion()
+            {
+                alert(document.getElementById("opciones").value);
+            }
+
+        </script>
+
+    </head>
+    <body>
+        <form >
+            <input id="textNumero" name="jj" type="text" />
+            <input type="button" id="boton" value="sdasd" onclick='adivinaNumero();' />
+            <div id="mensajes"></div>
+            <select id="opciones" onchange="verOpcion();">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                
+            </select>
+
+            <br><br>
+            <input id="textAncho" name="jj" type="text" />
+            <input id="textAlto" name="jj" type="text" />
+            <input type="button" value="tabla" 
+                   onclick='tabla(document.getElementById("textAncho").value, document.getElementById("textAlto").value);' />
+        </form>
+
+        <div id="tabla">
+        </div>
+    </body>
+</html>
