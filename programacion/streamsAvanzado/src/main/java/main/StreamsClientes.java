@@ -7,7 +7,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static java.util.stream.Collectors.counting;
+
 
 public class StreamsClientes {
 
@@ -24,7 +24,7 @@ public class StreamsClientes {
             .get());
 
     System.out.println(clientes.stream()
-        .sorted(Comparator.comparing(cliente -> ((Cliente) cliente).getCuentas().size()).reversed())
+        .sorted(Comparator.comparing(cliente -> ((Cliente)cliente).getCuentas().size()).reversed())
         .findFirst().get());
   }
 
@@ -79,7 +79,13 @@ public class StreamsClientes {
   public void cuartoClienteConMasDinero() {
     clientes.stream()
         .sorted(Comparator
-            .comparingInt(cliente -> cliente.getCuentas().stream().mapToInt(value -> value.getSaldo()).sum()))
+            .comparingInt(cliente -> ((Cliente)cliente).getCuentas().stream().mapToInt(value -> value.getSaldo()).sum()).reversed())
+        .skip(3)
+        .findFirst().get();
+
+    clientes.stream()
+        .sorted((o1, o2) -> o2.getCuentas().stream().mapToInt(value -> value.getSaldo()).sum() -
+            o1.getCuentas().stream().mapToInt(value -> value.getSaldo()).sum())
         .skip(3)
         .findFirst().get();
   }
@@ -89,6 +95,6 @@ public class StreamsClientes {
   public void numeroClientesPorDominioCorreo() {
     System.out.println(clientes.stream().collect(
         Collectors.groupingBy(cliente -> cliente.getEmail().substring(cliente.getEmail().indexOf("@") + 1)
-            , counting())));
+            , Collectors.counting())));
   }
 }

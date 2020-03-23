@@ -1,5 +1,6 @@
 package main;
 
+// productos de pedidos
 public class StreamsProductos {
 
   // con reduce y con sorted

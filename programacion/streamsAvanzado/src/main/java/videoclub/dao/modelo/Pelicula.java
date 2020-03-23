@@ -12,6 +12,11 @@ public class Pelicula extends Documental{
     this.actores = new ArrayList<>();
   }
 
+  public void addActor(String nombre)
+  {
+    this.actores.add(nombre);
+  }
+
   public List<String> getActores() {
     return actores;
   }

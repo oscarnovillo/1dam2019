@@ -6,6 +6,7 @@ public class StreamsVideoClub {
 
   public void mediaEdadDeSociosSancionados(){}
 
+  /** DIFICIL **/
   public void listaDiezProductosMasAlquilados(){}
 
   // numero de Peliculas Alquiladas, de Documentales y Videojuegos.

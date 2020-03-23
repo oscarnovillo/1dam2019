@@ -33,7 +33,7 @@ public class ServiciosVideoclub {
         return daoSocio.getSocioPorNif(nif);
     }
 
-    public boolean addProducto(Producto producto) {
+    public Producto addProducto(Producto producto) {
         DaoProductos daoProductos = new DaoProductos();
         return daoProductos.addProducto(producto);
     }

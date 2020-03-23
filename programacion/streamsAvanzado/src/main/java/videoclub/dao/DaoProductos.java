@@ -14,13 +14,13 @@ public class DaoProductos {
 
     private static final List<Producto> productos = new ArrayList<>();
 
-    public boolean addProducto(Producto producto) {
+    public Producto addProducto(Producto producto) {
         boolean productoAdded = false;
         if (!productos.contains(producto)) {
             productos.add(producto);
             productoAdded = true;
         }
-        return productoAdded;
+        return producto;
     }
 
     public boolean borrarProducto(Producto producto) {
@@ -48,6 +48,10 @@ public class DaoProductos {
                         && (producto instanceof Documental))
                 .map(producto -> (Documental) producto)
                 .collect(Collectors.toList());
+    }
+
+    public List<Producto> getTodosProductos(){
+        return productos;
     }
 
 
