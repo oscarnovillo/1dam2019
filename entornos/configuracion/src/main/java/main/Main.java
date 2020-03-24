@@ -13,26 +13,27 @@ public class Main {
 
   public static void main(String[] args) {
 
-    Properties prop = new Properties();
-    try {
-      prop.load(new FileReader("config/config.properties"));
-      String clave = (String)prop.get("clave");
-      int numero = Integer.parseInt((String)prop.get("manzanas"));
-      System.out.println(clave + " "+numero);
-      prop.load(new FileReader("kk.properties"));
-
-    } catch (IOException e) {
-      System.out.println(e.getMessage());
-    }
-
-
-
-    ConfigSingleton.getInstance().getConfig().getAlumnos().forEach(System.out::println);
+//    Properties prop = new Properties();
+//    try {
+//      prop.load(new FileReader("config/config.properties"));
+//      String clave = (String)prop.get("gerente.nombre");
+////      int numero = Integer.parseInt((String)prop.get("manzanas"));
+//      System.out.println(clave);
+////      prop.load(new FileReader("kk.properties"));
+//
+//    } catch (IOException e) {
+//      System.out.println(e.getMessage());
+//    }
 
 
-    System.out.println(ConfigSingleton.getInstance().getClave()+ " "
-     +ConfigSingleton.getInstance().getConfig().getManzanas());
+    System.out.println(ConfigSingleton.getInstance().getC().getUrl());
 
-    ConfigSingleton.getInstance().getClave();
+    System.out.println();
+//
+//
+//    System.out.println(ConfigSingleton.getInstance().getClave()+ " "
+//     +ConfigSingleton.getInstance().getConfig().getManzanas());
+//
+//    ConfigSingleton.getInstance().getClave();
   }
 }

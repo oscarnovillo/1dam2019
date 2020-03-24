@@ -5,6 +5,7 @@
  */
 package config.singleton;
 
+import config.ConfigTemp;
 import config.ConfigYaml;
 
 import java.io.FileInputStream;
@@ -21,8 +22,11 @@ import org.yaml.snakeyaml.Yaml;
 
 
 /**
+ * esta clase se encarga de
  *
- * @author oscar
+ *
+ *
+ * @author
  */
 public class ConfigSingleton {
 
@@ -37,15 +41,19 @@ public class ConfigSingleton {
                 instance = new ConfigSingleton();
                 Yaml yaml = new Yaml(new LocalDateYamlConstructor());
 
-                Properties p = new Properties();
-                ConfigYaml y = new ConfigYaml();
-                p.load(new FileInputStream("config/config.properties"));
-                y.setClave((String)p.get("clave"));
-                y.setManzanas(Integer.parseInt((String)
-                    p.get("manzanas")));
-                instance.config = yaml.loadAs(
+//                Properties p = new Properties();
+//                ConfigYaml y = new ConfigYaml();
+//                p.load(new FileInputStream("config/config.properties"));
+//                y.setClave((String)p.get("clave"));
+//                y.setManzanas(Integer.parseInt((String)
+//                    p.get("manzanas")));
+//                instance.config = yaml.loadAs(
+//                    new FileInputStream("config/config.yml"),
+//                         ConfigYaml.class);
+
+                instance.c = yaml.loadAs(
                     new FileInputStream("config/config.yml"),
-                         ConfigYaml.class);
+                    ConfigTemp.class);
             } catch (FileNotFoundException ex) {
                 Logger.getLogger(ConfigSingleton.class.getName()).log(Level.SEVERE, null, ex);
             } catch (IOException ex) {
@@ -57,13 +65,17 @@ public class ConfigSingleton {
     }
 
 
-
     private ConfigYaml config;
+
+    private ConfigTemp c;
 
     public ConfigYaml getConfig() {
         return config;
     }
 
+    public ConfigTemp getC() {
+        return c;
+    }
 
     public String getClave() {
         return config.getClave();

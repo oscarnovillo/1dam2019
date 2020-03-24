@@ -1,15 +1,28 @@
 ## YAML Template.
-
-clave: valor
-manzanas: 20
-frutas:
-  - peras
-  - manzanas
-  - kiwis
-alumnos:
-  - nombre: juan
-    direccion: kk
+cadenas:
+  - nombre: T5
+    domicilio:
+      - calle: n/s
+        numero: 56
+      - calle: san agustin
+        numero: 35
+    fechasPublicacion:
+      - 2000-01-09
+      - 2010-10-10
+      - 1990-01-01
+simple: 20.09
+objeto:
+  fruta: muchas
+  ganas: pocas
+  correr: es de cobardes
+guarderias:
+  - producto: de 0 a 3
+    precio: 50.80
     fecha: 2000-01-01
-  - nombre: pedro
-    direccion: ll
-    fecha: 2000-01-30
+  - producto: solo niñas
+    precio: 24.89
+    fecha: 2020-01-30
+notas:
+  - sobresalinete
+  - notable
+  - bien

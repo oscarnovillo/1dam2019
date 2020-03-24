@@ -7,6 +7,10 @@ import org.yaml.snakeyaml.nodes.ScalarNode;
 
 import java.time.LocalDate;
 
+
+/**
+ *
+ */
 public class LocalDateYamlConstructor extends Constructor {
 
   public LocalDateYamlConstructor() {
