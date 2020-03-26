@@ -16,7 +16,7 @@ public class StreamsProductos {
   }
 
 
-  // un grupo de producto por cada franja de 10, de 0 a 10, 11 a 20, etc...
+  // ****  % un grupo de producto por cada franja de 10, de 0 a 10, 11 a 20, etc...
   public void productosAgrupadosPorRangoPrecio10en10() {
   }
 

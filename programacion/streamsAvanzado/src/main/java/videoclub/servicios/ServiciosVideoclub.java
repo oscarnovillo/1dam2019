@@ -108,4 +108,21 @@ public class ServiciosVideoclub {
         return daoProductos.getTodosVideojuegos();
     }
 
+    public List<Producto>getTodosProductos(){
+        DaoProductos daoProductos = new DaoProductos();
+        return daoProductos.getTodosProductos();
+    }
+
+
+    public List<Socio> getTodosLosSocios() {
+        DaoSocios daoSocio = new DaoSocios();
+        return daoSocio.getTodosSocios();
+    }
+
+    public List<Alquiler> getTodosAlquileres() {
+        DaoAlquileres daoAlquileres =new DaoAlquileres();
+        return daoAlquileres.getTodosAlquileres();
+    }
+
+
 }

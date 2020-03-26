@@ -3,7 +3,9 @@ package videoclub.dao;
 import videoclub.dao.modelo.Alquiler;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class DaoAlquileres {
 
@@ -34,5 +36,9 @@ public class DaoAlquileres {
         } else {
             return alquileres.get(nif);
         }
+    }
+
+    public List<Alquiler> getTodosAlquileres() {
+        return alquileres.values().stream().collect(Collectors.toList());
     }
 }

@@ -3,7 +3,9 @@ package videoclub.dao;
 import videoclub.dao.modelo.Socio;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class DaoSocios {
 
@@ -20,6 +22,9 @@ public class DaoSocios {
         return insertado;
     }
 
+    public List<Socio> getTodosSocios() {
+        return socios.values().stream().collect(Collectors.toList());
+    }
 
 
     public Socio getSocioPorNif(String nif) {
