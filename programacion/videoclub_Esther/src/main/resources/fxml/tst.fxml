@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="668.0" prefWidth="861.0" style="-fx-background-color: #EEEEEE;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.TestController">
+   <children>
+      <Label fx:id="labelCaja" layoutX="50.0" layoutY="82.0" text="va a salir" />
+      <CheckBox fx:id="checkPrueba" layoutX="60.0" layoutY="216.0" mnemonicParsing="false" onAction="#checkVideojuego" text="videjuego" />
+      <RadioButton fx:id="radioTonto" layoutX="60.0" layoutY="258.0" mnemonicParsing="false" text="Tonto">
+         <toggleGroup>
+            <ToggleGroup fx:id="capacidad" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioListo" layoutX="161.0" layoutY="258.0" mnemonicParsing="false" text="Listo" toggleGroup="$capacidad" />
+      <ComboBox fx:id="comboPersonas" layoutX="356.0" layoutY="78.0" onAction="#cambiaPersona" prefWidth="150.0" />
+      <Pane layoutX="580.0" layoutY="116.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #DDDDDD;">
+         <children>
+            <TextField fx:id="textCaja" layoutX="26.0" layoutY="14.0" />
+            <Button layoutX="61.0" layoutY="53.0" mnemonicParsing="false" onAction="#pinchaBoton" text="Pincha aqui" />
+         </children>
+         <opaqueInsets>
+            <Insets bottom="1.0" left="10.0" right="10.0" top="10.0" />
+         </opaqueInsets>
+      </Pane>
+      <TextField fx:id="textFabricante" layoutX="110.0" layoutY="163.0" />
+      <Label fx:id="labelFabricante" layoutX="34.0" layoutY="167.0" text="fabricante" />
+      <ListView fx:id="listSocios" layoutX="295.0" layoutY="167.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

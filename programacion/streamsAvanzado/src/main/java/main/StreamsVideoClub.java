@@ -2,9 +2,17 @@ package main;
 
 public class StreamsVideoClub {
 
-  public void numeroSociosSancionados(){}
+  public void numeroSociosSancionados(){
 
-  public void mediaEdadDeSociosSancionados(){}
+
+
+  }
+
+  public void mediaEdadDeSociosSancionados(){
+
+
+
+  }
 
   /** DIFICIL **/
   public void listaDiezProductosMasAlquilados(){}

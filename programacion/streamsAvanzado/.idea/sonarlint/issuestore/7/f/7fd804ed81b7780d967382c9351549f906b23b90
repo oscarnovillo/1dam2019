@@ -1,0 +1,7 @@
+
+W
+java:S1854";Remove this useless assignment to local variable "cliente".(Ì²®¢úÿÿÿÿ
+H
+java:S1481",Remove this unused "cliente" local variable.(Ì²®¢úÿÿÿÿ
+A
+java:S11686"+Return an empty collection instead of null.(¥¹ï

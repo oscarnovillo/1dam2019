@@ -251,11 +251,11 @@ public class Main {
   }
 
   private static void registrarProducto(Producto p, ServiciosVideoclub sv) {
-    if (sv.addProducto(p)) {
-      System.out.println("Producto añadido correctamente");
-    } else {
-      System.out.println("El producto no se ha podido añadir");
-    }
+//    if (sv.addProducto(p)) {
+//      System.out.println("Producto añadido correctamente");
+//    } else {
+//      System.out.println("El producto no se ha podido añadir");
+//    }
   }
 
   private static int elegirProducto(Scanner sc, int size) {

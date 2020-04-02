@@ -18,13 +18,19 @@ public class Calculadora {
   public int suma(int a, int b) {
     int resultado = a + b;
 
-    if (a < 1 || b < 1) {
+    if ( (a<1 || compruebaB(b)) && true) {
       resultado = -1;
     }
 
     return resultado;
   }
 
+
+  public boolean compruebaB(int b)
+  {
+    System.out.println("Comprobando B");
+    return b<1;
+  }
 
   public int resta(int a, int b) {
 

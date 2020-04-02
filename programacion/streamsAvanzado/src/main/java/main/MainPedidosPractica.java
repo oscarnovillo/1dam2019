@@ -5,6 +5,7 @@ import pedidos.dao.modelo.*;
 import pedidos.servicios.ServiciosPedido;
 
 import java.util.Random;
+import java.util.stream.Collectors;
 
 public class MainPedidosPractica {
 
@@ -17,6 +18,19 @@ public class MainPedidosPractica {
     System.out.println(sp.getTodosClientes());
     System.out.println(sp.todosProductos());
     System.out.println(sp.getTodosPedidos());
+
+    sp.getTodosPedidos().stream().flatMapToInt(pedidoCompuesto ->
+        pedidoCompuesto.getPedidosSimples().stream()
+            .flatMap(pedidoSimple -> pedidoSimple.getLineasPedido().stream())
+            .mapToInt(value -> value.getCantidad())).average();
+
+    sp.getTodosPedidos().stream().flatMap(pedidoCompuesto -> pedidoCompuesto.getPedidosSimples().stream())
+        .collect(Collectors.toMap(pedidoSimple -> pedidoSimple,o -> o.getLineasPedido().stream().mapToInt(value -> value.getCantidad()).sum()));
+
+    StreamsProductos spr = new StreamsProductos();
+
+    spr.productosAgrupadosPorRangoPrecio10en10();
+
 
   }
 
@@ -47,7 +61,7 @@ public class MainPedidosPractica {
     for (int i = 0; i < 100; i++) {
       String nombre = f.animal().name();
       int stock = f.number().numberBetween(200, 300);
-      int precio = r.nextInt(20);
+      int precio = r.nextInt(100);
       Producto producto = new Producto(nombre, stock, precio);
       sp.addProducto(producto);
     }

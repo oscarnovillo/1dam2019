@@ -1,0 +1,39 @@
+
+N
+java:S1612X",Replace this lambda with a method reference.(ƒ®ÉÇüÿÿÿÿ8ÂÂ¹¹.
+N
+java:S16127",Replace this lambda with a method reference.(ÄÀÛ×üÿÿÿÿ8Ìñı¸.
+I
+java:S1612C",Replace this lambda with a method reference.(Ë‰¨ï8Ìñı¸.
+Z	java:S106J"9Replace this use of System.out or System.err by a logger.(Ñ®Îıÿÿÿÿ8Ìñı¸.
+N
+java:S1612J",Replace this lambda with a method reference.(Ñ®Îıÿÿÿÿ8Ìñı¸.
+Y
+java:S3655V"7Call "Optional#isPresent()" before accessing the value.(·‰‹Çıÿÿÿÿ8íŠ¬¹.
+Z	java:S1069"9Replace this use of System.out or System.err by a logger.(«¹ëÓıÿÿÿÿ8Ìñı¸.
+Y
+java:S3655P"7Call "Optional#isPresent()" before accessing the value.(·‰‹Çıÿÿÿÿ8Ìñı¸.
+I
+java:S2201Z"'The return value of "get" must be used.(±µ³»øÿÿÿÿ8íŠ¬¹.
+c
+java:S3027a"FPut single-quotes around '@' to use the faster "indexOf(char)" method.(Æí¨â8Îí½¹.
+U	java:S106-"9Replace this use of System.out or System.err by a logger.(¦ĞôÛ8Ìñı¸.
+Y
+java:S3655"7Call "Optional#isPresent()" before accessing the value.(·‰‹Çıÿÿÿÿ8Ìñı¸.
+Y
+java:S3655"7Call "Optional#isPresent()" before accessing the value.(áñ›ƒüÿÿÿÿ8¼ñŠ¹.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(áñ›ƒüÿÿÿÿ8Ìñı¸.
+Z	java:S106&"9Replace this use of System.out or System.err by a logger.(‰ÍÖÎúÿÿÿÿ8Ìñı¸.
+Z	java:S106D"9Replace this use of System.out or System.err by a logger.(¹¦…‡úÿÿÿÿ8Ìñı¸.
+I
+java:S2201T"'The return value of "get" must be used.(±µ³»øÿÿÿÿ8Ìñı¸.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ÆÀûı8Ìñı¸.
+N
+java:S1612W",Replace this lambda with a method reference.(ïÒí§ıÿÿÿÿ8ÂÂ¹¹.
+N
+java:S1612?",Replace this lambda with a method reference.(€ÈÃÍûÿÿÿÿ8Ìñı¸.
+Z	java:S106."9Replace this use of System.out or System.err by a logger.(áñ›ƒüÿÿÿÿ8Ìñı¸.
+Z	java:S106`"9Replace this use of System.out or System.err by a logger.(«ÿÚĞıÿÿÿÿ8Ìñı¸.
+U	java:S106!"9Replace this use of System.out or System.err by a logger.(éİÜ8Ìñı¸.
+H
+java:S1612R",Replace this lambda with a method reference.(ïƒ„u8æÃª¹.

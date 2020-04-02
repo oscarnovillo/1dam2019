@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="pantallaPrincipal" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.Principal">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Producto">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#menuCrearVideojuego" text="Crear Videojuego" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Socio">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#menuCrearSocio" text="CrearSocio" />
+                  <MenuItem mnemonicParsing="false" onAction="#verSocios" text="Ver Socios" />
+                <MenuItem mnemonicParsing="false" onAction="#menuCrearSocio" text="Borrar Socio" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Alquiler">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="112.0" layoutY="56.0" text="Bienvenida">
+               <font>
+                  <Font size="61.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imagenBienvenida" fitHeight="150.0" fitWidth="200.0" layoutX="176.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

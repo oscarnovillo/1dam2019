@@ -20,6 +20,10 @@ public class MainVideoclubPractica {
     System.out.println(sv.getTodosLosSocios().toString());
     System.out.println(sv.getTodosProductos().toString());
     System.out.println(sv.getTodosAlquileres().toString());
+
+    StreamsProductos sp = new StreamsProductos();
+    sp.mediaPrecioTodosLosProductos();
+
   }
 
   private static void setupSocioSocios() {
@@ -69,7 +73,7 @@ public class MainVideoclubPractica {
     ServiciosVideoclub sv = new ServiciosVideoclub();
     for (int i = 0; i < 100; i++) {
       Socio s = sv.getTodosLosSocios().get(r.nextInt(sv.getTodosLosSocios().size()));
-      Producto producto = sv.getTodosProductos().get(r.nextInt(sv.getTodosVideoJuegos().size()));
+      Producto producto = sv.getTodosProductos().get(r.nextInt(sv.getTodosProductos().size()));
       sv.alquilarProducto(producto, s.getNif());
       Alquiler alquiler = new Alquiler(LocalDateTime.now().minusSeconds(r.nextInt(Configuration.getDiasAlquilerPeliculas() * 2)), s, producto);
       Encuesta e = new Encuesta(r.nextInt(5) + 1, true);

@@ -9,7 +9,6 @@ import java.util.stream.Collectors;
 
 public class DaoAlquileres {
 
-
     // el nif como clave primaria
     private static final Map<String, Alquiler> alquileres = new HashMap<>();
 
