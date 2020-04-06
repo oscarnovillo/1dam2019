@@ -1,75 +1,67 @@
 package main;
 
+
 import pedidos.dao.modelo.LineaPedido;
+import pedidos.dao.modelo.PedidoCompuesto;
+import pedidos.dao.modelo.PedidoSimple;
 import pedidos.servicios.ServiciosPedido;
 
-import java.util.Map;
+import java.util.List;
 import java.util.stream.Collectors;
 
-import static java.util.stream.Collectors.counting;
 
 public class StreamsPedidos {
-
-  // un map con nombre de producto y cantidad de veces pedido
-  public void productosAgrupadosPorCantidadDeVecesPedidos(){
     ServiciosPedido sp = new ServiciosPedido();
+    List<PedidoCompuesto> pedidos = sp.getTodosPedidos();
 
-    sp.getTodosPedidos().stream()
-        .flatMap(pedidoCompuesto -> pedidoCompuesto.getPedidosSimples().stream())
-        .flatMap(pedidoSimple -> pedidoSimple.getLineasPedido().stream())
-        .filter(lineaPedido -> lineaPedido.getProducto().getNombre().equals("jjj"))
-        .count();
+    // un map con nombre de producto y cantidad de veces pedido
+    public void productosAgrupadosPorCantidadDeVecesPedidos() {
+        System.out.println(pedidos.stream().flatMap(pedidoCompuesto -> pedidoCompuesto.getPedidosSimples().stream())
+                .flatMap(pedidoSimple -> pedidoSimple.getLineasPedido().stream())
+                .map(LineaPedido::getProducto)
+                .collect(Collectors.groupingBy(
+                        producto -> pedidos.stream().flatMap(pedidoCompuesto -> pedidoCompuesto.getPedidosSimples().stream())
+                        .flatMap(pedidoSimple -> pedidoSimple.getLineasPedido().stream())
+                        .filter(lineaPedido -> lineaPedido.getProducto().equals(producto)).count())));
+    }
 
-    sp.getTodosPedidos().stream()
-        .flatMap(pedidoCompuesto -> pedidoCompuesto.getPedidosSimples().stream())
-        .flatMap(pedidoSimple -> pedidoSimple.getLineasPedido().stream())
-        .map(lineaPedido -> lineaPedido.getProducto())
-        .collect(Collectors.groupingBy(
-            producto -> sp.getTodosPedidos().stream()
-            .flatMap(pedidoCompuesto -> pedidoCompuesto.getPedidosSimples().stream())
-            .flatMap(pedidoSimple -> pedidoSimple.getLineasPedido().stream())
-            .filter(lineaPedido1 -> lineaPedido1.getProducto().equals(producto)).count())
-            );
+    public void clienteQueMasDineroSehaGastado() {
+        setFacturaTotal();
+        System.out.println(pedidos.stream().reduce((pedidoCompuesto, pedidoCompuesto2) ->
+                pedidoCompuesto.getTotalFactura() >= pedidoCompuesto2.getTotalFactura()
+                        ? pedidoCompuesto : pedidoCompuesto2).get().getCliente().getNombre());
+    }
 
-
-    Map<String,Long> mapPRoducto = sp.getTodosPedidos().stream()
-        .flatMap(pedidoCompuesto -> pedidoCompuesto.getPedidosSimples().stream())
-        .flatMap(pedidoSimple -> pedidoSimple.getLineasPedido().stream())
-        .map(lineaPedido -> lineaPedido.getProducto())
-        .collect(Collectors.groupingBy(
-            producto -> producto.getNombre(),counting()
-        ));
-
-    mapPRoducto.get("jjj");
-
-
-
+    // La cantidad media de producto por pedido simple, sumando todas las lineas de pedido de cada simple
+    public void lacantidadMediaPedidaDeCadaProductoEnCadaPedidoCompuesto() {
+        pedidos.stream().forEach(pedidoCompuesto ->
+        {
+            System.out.println(pedidoCompuesto + ":" + pedidoCompuesto.getPedidosSimples().stream()
+                    .flatMap(pedidoSimple -> pedidoSimple.getLineasPedido().stream())
+                    .mapToDouble(LineaPedido::getCantidad).average().orElse(0));
+        });
+    }
 
 
-
-  }
-
-  public void clienteQueMasDineroSehaGastado(){
-
-
-
-
-
-  }
+    public void pedidoSimpleConMasLineasdePedido() {
+        System.out.println(pedidos.stream().flatMap(pedidoCompuesto -> pedidoCompuesto.getPedidosSimples().stream())
+                .reduce(((pedidoSimple, pedidoSimple2) ->
+                        pedidoSimple.getLineasPedido().size() >= pedidoSimple2.getLineasPedido().size() ?
+                                pedidoSimple : pedidoSimple2)));
+    }
 
 
-  // La cantidad media de producto por pedido simple, sumando todas las lineas de pedido de cada simple
-  // devuelve solo un numero
-  public void lacantidadMediaPedidaDeCadaProductoEnCadaPedidoCompuesto(){
+    public void todoelDineroFacturadoEnTotalentodosLosPedidos() {
+        System.out.println(pedidos.stream().flatMap(pedidoCompuesto -> pedidoCompuesto.getPedidosSimples().stream())
+                .flatMap(pedidoSimple -> pedidoSimple.getLineasPedido().stream())
+                .mapToDouble(LineaPedido::getPrecioTotal).sum());
+    }
 
-
-  }
-
-
-  public void pedidoSimpleConMasLineasdePedido() {}
-
-
-  public void todoelDineroFacturadoEnTotalentodosLosPedidos(){}
-
-
+    public void setFacturaTotal() {
+        pedidos.stream().forEach(pedidoCompuesto -> pedidoCompuesto.getPedidosSimples().stream()
+                .forEach(pedidoSimple -> pedidoSimple.setTotal(pedidoSimple.getLineasPedido().stream()
+                        .mapToInt(LineaPedido::getPrecioTotal).sum())));
+        pedidos.stream().forEach(pedidoCompuesto -> pedidoCompuesto.setTotalFactura(pedidoCompuesto.getPedidosSimples().stream()
+                .mapToInt(PedidoSimple::getTotal).sum()));
+    }
 }
