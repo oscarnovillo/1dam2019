@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="466.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.Chart">
+   <children>
+      <LineChart fx:id="chartEnfermos" createSymbols="false" layoutX="72.0" layoutY="71.0" prefHeight="329.0" prefWidth="500.0" title="Enfermos">
+        <xAxis>
+          <NumberAxis autoRanging="false" label="dias" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="enfermos totales" side="LEFT" upperBound="10000.0" />
+        </yAxis>
+      </LineChart>
+      <Button layoutX="27.0" layoutY="102.0" mnemonicParsing="false" onAction="#crearPunto" text="Button" />
+      <Button layoutX="27.0" layoutY="157.0" mnemonicParsing="false" onAction="#clear" text="clear" />
+   </children>
+</AnchorPane>

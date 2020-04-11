@@ -8,26 +8,30 @@ import org.junit.jupiter.api.*;
 
 import java.time.LocalDateTime;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@DisplayName("Given un alquiler")
 class DaoAlquileresTest {
 
-  static DaoAlquileres dao;
+  DaoAlquileres dao;
   Alquiler alquiler;
 
   @BeforeAll
-  static void setupAll()
+  void setupAll()
   {
     dao = new DaoAlquileres();
+    Socio s = new Socio("koko","asd","asd","aasd",12);
+    Producto p = new Videojuego("as",12,"asd","asd");
+    alquiler =  new Alquiler(LocalDateTime.of(2000,1,1,1,1),s,p);
 
   }
 
   @BeforeEach
   void setUp() {
-    Socio s = new Socio("koko","asd","asd","aasd",12);
-    Producto p = new Videojuego("as",12,"asd","asd");
-    alquiler =  new Alquiler(LocalDateTime.of(2000,1,1,1,1),s,p);
+
 
   }
 
@@ -36,20 +40,23 @@ class DaoAlquileresTest {
  //   dao.borrarAlquiler(alquiler);
   }
 
+
+  //ParametrizedTest
   @Test
   @Order(1)
-  @DisplayName("probar que se añade al alquiler")
+  @DisplayName("when add aquiler then se añade")
   void addAlquiler() {
     //Given
     //when
     boolean resultado = dao.addAlquiler(alquiler);
 
     //Then
-    assertTrue(resultado);
+    assertThat(resultado).as("alquiler añadido").isTrue();
   }
 
   @Test
   @Order(2)
+  @DisplayName("when add aquiler que ya existe then no se añade")
   void addAlquilerDeSocioExiste() {
     //Given
 
@@ -64,6 +71,7 @@ class DaoAlquileresTest {
 
   @Test
   @Order(3)
+  @DisplayName("when pido alquiler de socio then lo devuelve")
   void addAlquilerComprobarExiste() {
     //Given
 
@@ -72,7 +80,7 @@ class DaoAlquileresTest {
     Alquiler a = dao.alquilerSocio("koko");
 
     //Then
-    assertEquals(alquiler,a);
+    assertThat(a).isSameAs(alquiler);
   }
 
 

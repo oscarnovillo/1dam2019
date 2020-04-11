@@ -4,18 +4,21 @@ import config.Configuration;
 import dao.DaoAlquileres;
 import dao.DaoProductos;
 import dao.DaoSocios;
+import dao.DaoSociosI;
 import dao.modelo.*;
 
+import javax.inject.Inject;
 import java.time.LocalDateTime;
 import java.util.List;
 
 public class ServiciosVideoclub {
 
-    private Object timeUnit;
+    @Inject
+    private DaoSocios daoSocios;
 
     // add socio
     public boolean addSocio(Socio socio) {
-        DaoSocios daoSocios = new DaoSocios();
+        //DaoSocios daoSocios = new DaoSocios();
         return daoSocios.addSocio(socio);
     }
 

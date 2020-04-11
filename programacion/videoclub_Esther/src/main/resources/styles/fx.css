@@ -1,0 +1,11 @@
+
+
+.label{
+    -fx-background-color: #76d4ff;
+}
+.label:hover{
+    -fx-background-color: #2a27ff;
+}
+.pane{
+    -fx-background-color: red;
+}

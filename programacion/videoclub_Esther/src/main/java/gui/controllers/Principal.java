@@ -10,6 +10,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 
+import javax.inject.Inject;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -21,6 +22,8 @@ public class Principal implements Initializable {
   @FXML
   private ImageView imagenBienvenida;
 
+  @Inject
+  FXMLLoader fxmlLoader;
 
   private Alert a;
 
@@ -32,9 +35,9 @@ public class Principal implements Initializable {
   @FXML
   private void verSocios(ActionEvent actionEvent) throws IOException {
     if (pantallaVerSocio == null) {
-      FXMLLoader loaderMenu = new FXMLLoader(
-          getClass().getResource("/fxml/verSocios.fxml"));
-      pantallaVerSocio = loaderMenu.load();
+//      FXMLLoader loaderMenu = new FXMLLoader(
+//          getClass().getResource("/fxml/verSocios.fxml"));
+      pantallaVerSocio = fxmlLoader.load(getClass().getResourceAsStream("/fxml/verSocios.fxml"));
     }
     pantallaPrincipal.setCenter(pantallaVerSocio);
   }
@@ -43,9 +46,9 @@ public class Principal implements Initializable {
   private void menuCrearSocio(ActionEvent actionEvent) throws IOException {
 
     if (pantallaCrearSocio == null) {
-      FXMLLoader loaderMenu = new FXMLLoader(
-          getClass().getResource("/fxml/crearSocio.fxml"));
-      pantallaCrearSocio = loaderMenu.load();
+//      FXMLLoader loaderMenu = new FXMLLoader(
+//          getClass().getResource("/fxml/crearSocio.fxml"));
+      pantallaCrearSocio = fxmlLoader.load(getClass().getResourceAsStream("/fxml/crearSocio.fxml"));
     }
     pantallaPrincipal.setCenter(pantallaCrearSocio);
   }
@@ -61,6 +64,10 @@ public class Principal implements Initializable {
     pantallaPrincipal.setCenter(pantallaSecundaria);
   }
 
+
+  public void start() throws IOException {
+    menuCrearSocio(null);
+  }
 
   @Override
   public void initialize(URL location, ResourceBundle resources) {

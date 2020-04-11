@@ -9,6 +9,10 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import servicios.ServiciosVideoclub;
 
+import javax.inject.Inject;
+import javax.validation.Validation;
+import javax.validation.Validator;
+import javax.validation.ValidatorFactory;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -25,6 +29,10 @@ public class CrearSocio implements Initializable {
   @FXML
   private TextField textEdad;
 
+
+  @Inject
+  private ServiciosVideoclub sv;
+
   private Alert a;
 
   @Override
@@ -36,23 +44,30 @@ public class CrearSocio implements Initializable {
   private String comprobarSocio() {
     if (!textDni.getText().isEmpty() && !textNombre.getText().isEmpty() && !textDireccion.getText().isEmpty()
         && !textTelefono.getText().isEmpty() && !textEdad.getText().isEmpty()) {
+
+      textEdad.getText().chars().allMatch(Character::isDigit);
+
       try {
         Integer.parseInt(textEdad.getText());
       } catch (Exception e) {
         return "Edad no es un numero";
       }
     } else {
-      return " algun campo vacio";
+      return "algun campo vacio";
     }
     return null;
   }
 
   @FXML
   private void crearSocio(ActionEvent actionEvent) {
-    ServiciosVideoclub sv = new ServiciosVideoclub();
+    //sv = new ServiciosVideoclub();
     boolean creado = false;
     String error = comprobarSocio();
     if (error == null) {
+//      ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+//      Validator val = factory.getValidator();
+//      val.validate(book).stream().forEach(bookConstraintViolation ->
+//          System.out.println(bookConstraintViolation.getMessage()));
       creado = sv.addSocio(new Socio(textDni.getText(), textNombre.getText(), textDireccion.getText(),
           textTelefono.getText(), Integer.parseInt(textEdad.getText())));
       if (creado) {
