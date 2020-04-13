@@ -24,9 +24,9 @@ public class ServiciosVideoclub {
 
     // borrarSocio
     public boolean borrarSocio(String dni) {
-        DaoSocios daoSocio = new DaoSocios();
-        if (daoSocio.getSocioPorNif(dni) != null) {
-            return daoSocio.deleteSocio(daoSocio.getSocioPorNif(dni));
+        //DaoSocios daoSocio = new DaoSocios();
+        if (daoSocios.getSocioPorNif(dni) != null) {
+            return daoSocios.deleteSocio(daoSocios.getSocioPorNif(dni));
         }
         return false;
     }
