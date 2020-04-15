@@ -1,0 +1,16 @@
+Se trata de simular la grafica de una pandemia X,
+
+Para ello hay datos en pantalla variables que se pueden configurar.
+- numero de personas.
+- dias del estudio
+- numero de persona que tienen contacto con alguien
+- numero de personas con las que tienen contacto.
+- probabilidad de contagio. aleatoria entre dos rangos que salen en pantalla.
+- dias que tardas en curarte. aleatorio por persona, en el grafico con un rango.
+
+
+La funcion de contagiar será recursiva, y tendrá en cuenta la probabilidad de contagio,
+
+Según pasan los días los enfermos se van curando.
+
+OJO. al haber probabilidad de contagio puedes tener un bucle infinito, hay que poner otra variable para ver si has visto ya a esa persona.
