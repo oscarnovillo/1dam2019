@@ -57,6 +57,7 @@ public class ServiciosVideoclub {
         if (alquiler != null) {
             Producto producto = alquiler.getProductoAlquilado();
             producto.setCantidadAlquilada(producto.getCantidadAlquilada() - 1);
+
             //sancion --> comprobar si se pasa del tiempo
             int tiempoAlquiler;
             if (producto instanceof Documental) {

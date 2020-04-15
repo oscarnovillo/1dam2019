@@ -30,6 +30,8 @@ public class CrearSocio implements Initializable {
   private TextField textEdad;
 
 
+
+
   @Inject
   private ServiciosVideoclub sv;
 

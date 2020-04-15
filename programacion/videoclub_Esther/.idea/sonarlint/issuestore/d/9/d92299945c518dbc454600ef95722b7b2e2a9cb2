@@ -1,0 +1,64 @@
+
+[	java:S106Ö"9Replace this use of System.out or System.err by a logger.(©ü®‡ıÿÿÿÿ8ÈÑ Â.
+[	java:S106å"9Replace this use of System.out or System.err by a logger.(ôÂ‹¾şÿÿÿÿ8ÈÑ Â.
+V	java:S106¤"9Replace this use of System.out or System.err by a logger.(ÄÅ–8ÈÑ Â.
+T	java:S1068"9Replace this use of System.out or System.err by a logger.(ïíŞQ8ØìÂ.
+`
+java:S1155q">Use isEmpty() to check whether the collection is empty or not.(­í˜şÿÿÿÿ8ØìÂ.
+[	java:S106ª"9Replace this use of System.out or System.err by a logger.(ùç¥Àûÿÿÿÿ8ÈÑ Â.
+[	java:S106ñ"9Replace this use of System.out or System.err by a logger.(Ë¬ñßøÿÿÿÿ8ÈÑ Â.
+V	java:S106«"9Replace this use of System.out or System.err by a logger.(¥—”©8ÈÑ Â.
+>	java:S131W""Add a default case to this switch.(°€àâ8ØìÂ.
+V	java:S106Û"9Replace this use of System.out or System.err by a logger.(ÂÍ—8ÈÑ Â.
+Á
+java:S1192["£Define a constant instead of duplicating this literal "Dime la cantidad a modificar. En caso de ser una retirada de Stock, por favor indicalo en negativo" 3 times.(õ«æï8ØìÂ.
+[	java:S106ú"9Replace this use of System.out or System.err by a logger.(§Ò¨şÿÿÿÿ8ÈÑ Â.
+U	java:S106œ"9Replace this use of System.out or System.err by a logger.(á‹áG8ÈÑ Â.
+[	java:S106ø"9Replace this use of System.out or System.err by a logger.(ç¥×šşÿÿÿÿ8ÈÑ Â.
+[	java:S106²"9Replace this use of System.out or System.err by a logger.(¦¨®²şÿÿÿÿ8ÈÑ Â.
+[	java:S106ÿ"9Replace this use of System.out or System.err by a logger.(¼Òêšÿÿÿÿÿ8ÈÑ Â.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(İŸûøÿÿÿÿ8ØìÂ.
+U	java:S106;"9Replace this use of System.out or System.err by a logger.(³ÖØæ8ØìÂ.
+a
+java:S1155…">Use isEmpty() to check whether the collection is empty or not.(´»ºÂüÿÿÿÿ8ØìÂ.
+[	java:S106†"9Replace this use of System.out or System.err by a logger.(…Â¨®øÿÿÿÿ8ÈÑ Â.
+a
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(î€ÿ©şÿÿÿÿ8ØìÂ.
+V	java:S106¼"9Replace this use of System.out or System.err by a logger.(áÙëû8ÈÑ Â.
+[	java:S106Ë"9Replace this use of System.out or System.err by a logger.(˜—³ôüÿÿÿÿ8ÈÑ Â.
+Z	java:S106a"9Replace this use of System.out or System.err by a logger.(Ë÷õ‚şÿÿÿÿ8ØìÂ.
+U	java:S1061"9Replace this use of System.out or System.err by a logger.(ˆİâŒ8ØìÂ.
+V	java:S106Ş"9Replace this use of System.out or System.err by a logger.(Â»‚û8ÈÑ Â.
+Z	java:S106="9Replace this use of System.out or System.err by a logger.(–ÌÎıÿÿÿÿ8ØìÂ.
+[	java:S106Œ"9Replace this use of System.out or System.err by a logger.(´ÇÆÿÿÿÿÿ8ÈÑ Â.
+U	java:S106É"9Replace this use of System.out or System.err by a logger.(ÆöãI8ÈÑ Â.
+[	java:S106é"9Replace this use of System.out or System.err by a logger.(Õˆ‹…ıÿÿÿÿ8ÈÑ Â.
+[	java:S106£"9Replace this use of System.out or System.err by a logger.(À‡ÃÀøÿÿÿÿ8ÈÑ Â.
+U	java:S106s"9Replace this use of System.out or System.err by a logger.(õ«æï8ØìÂ.
+[	java:S106‰"9Replace this use of System.out or System.err by a logger.(êµâ’ÿÿÿÿÿ8ØìÂ.
+T	java:S106 "9Replace this use of System.out or System.err by a logger.(š·8ÈÑ Â.
+a
+java:S1155•">Use isEmpty() to check whether the collection is empty or not.(­í˜şÿÿÿÿ8ÈÑ Â.
+U	java:S106g"9Replace this use of System.out or System.err by a logger.(õ«æï8ØìÂ.
+p
+java:S3776"SRefactor this method to reduce its Cognitive Complexity from 102 to the 15 allowed.(Çµí‘8Õ—é­.
+T	java:S106m"9Replace this use of System.out or System.err by a logger.(€Õêv8Õ—é­.
+T	java:S106y"9Replace this use of System.out or System.err by a logger.(€Õêv8ØìÂ.
+U	java:S106["9Replace this use of System.out or System.err by a logger.(õ«æï8ØìÂ.
+>	java:S131C""Add a default case to this switch.(°€àâ8ØìÂ.
+[	java:S106‘"9Replace this use of System.out or System.err by a logger.(êµâ’ÿÿÿÿÿ8Õ—é­.
+V	java:S106"9Replace this use of System.out or System.err by a logger.(éœ‘ğ8ÈÑ Â.
+`
+java:S1155e">Use isEmpty() to check whether the collection is empty or not.(î€ÿ©şÿÿÿÿ8ØìÂ.
+[	java:S106Î"9Replace this use of System.out or System.err by a logger.(ß¤­úşÿÿÿÿ8ÈÑ Â.
+U	java:S106™"9Replace this use of System.out or System.err by a logger.(³Ï–G8ÈÑ Â.
+[	java:S106§"9Replace this use of System.out or System.err by a logger.(šæ¶÷ıÿÿÿÿ8ÈÑ Â.
+[	java:S106µ"9Replace this use of System.out or System.err by a logger.(Äãß ıÿÿÿÿ8ÈÑ Â.
+Z	java:S106*"9Replace this use of System.out or System.err by a logger.(Ûò ”ûÿÿÿÿ8ØìÂ.
+?	java:S131ƒ""Add a default case to this switch.(°€àâ8ØìÂ.
+V	java:S106Ñ"9Replace this use of System.out or System.err by a logger.(Ü¼¤ÿ8ÈÑ Â.
+V	java:S106²"9Replace this use of System.out or System.err by a logger.(ÙÙ¤‚8ÈÑ Â.
+V	java:S106á"9Replace this use of System.out or System.err by a logger.(Ş‘¿Ë8ÈÑ Â.
+U	java:S106""9Replace this use of System.out or System.err by a logger.(ãà±œ8ØìÂ.
+[	java:S106•"9Replace this use of System.out or System.err by a logger.(Èâõ°üÿÿÿÿ8ÈÑ Â.
+Z	java:S1063"9Replace this use of System.out or System.err by a logger.(Ö˜ÑÉüÿÿÿÿ8ØìÂ.

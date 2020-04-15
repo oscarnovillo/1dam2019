@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class DaoAlquileresTest {
 
   DaoAlquileres dao;
-  Alquiler alquiler;
+  Alquiler alquilerEsperado;
 
   @BeforeAll
   void setupAll()
@@ -25,7 +25,7 @@ class DaoAlquileresTest {
     dao = new DaoAlquileres();
     Socio s = new Socio("koko","asd","asd","aasd",12);
     Producto p = new Videojuego("as",12,"asd","asd");
-    alquiler =  new Alquiler(LocalDateTime.of(2000,1,1,1,1),s,p);
+    alquilerEsperado =  new Alquiler(LocalDateTime.of(2000,1,1,1,1),s,p);
 
   }
 
@@ -48,7 +48,7 @@ class DaoAlquileresTest {
   void addAlquiler() {
     //Given
     //when
-    boolean resultado = dao.addAlquiler(alquiler);
+    boolean resultado = dao.addAlquiler(alquilerEsperado);
 
     //Then
     assertThat(resultado).as("alquiler añadido").isTrue();
@@ -62,7 +62,7 @@ class DaoAlquileresTest {
 
 
     //when
-    boolean resultado = dao.addAlquiler(alquiler);
+    boolean resultado = dao.addAlquiler(alquilerEsperado);
 
     //Then
     assertFalse(resultado);
@@ -80,7 +80,7 @@ class DaoAlquileresTest {
     Alquiler a = dao.alquilerSocio("koko");
 
     //Then
-    assertThat(a).isSameAs(alquiler);
+    assertThat(a).isSameAs(alquilerEsperado);
   }
 
 
@@ -92,7 +92,20 @@ class DaoAlquileresTest {
   }
 
   @Test
+  @Order(4)
   void alquilerSocio() {
+    //Given
+
+    //when
+    Alquiler alquilerActual  = dao.alquilerSocio("koko");
+    // And
+    Alquiler alquilerActual2 = dao.alquilerSocio("lll");
+
+    //then
+    assertEquals(alquilerActual,alquilerEsperado);
+    //And
+    assertNull(alquilerActual2);
+
   }
 
 
