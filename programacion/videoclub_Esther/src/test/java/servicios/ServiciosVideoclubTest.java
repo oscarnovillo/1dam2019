@@ -1,14 +1,20 @@
 package servicios;
 
-import dao.modelo.Documental;
-import dao.modelo.FormatoPelicula;
-import dao.modelo.Pelicula;
-import dao.modelo.Videojuego;
+import dao.DaoAlquileres;
+import dao.modelo.*;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.powermock.modules.junit4.PowerMockRunner;
 
+import java.time.*;
 import java.util.List;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.when;
+import static org.powermock.api.mockito.PowerMockito.mockStatic;
+
 
 class ServiciosVideoclubTest {
 
@@ -34,7 +40,25 @@ class ServiciosVideoclubTest {
 
     assertEquals(p,pelis.get(0));
     assertEquals(1,pelis.size());
+  }
+
+
+  @Test
+  void probarDevolucionProducto()
+  {
+    //Given
+    Instant.now(Clock.fixed(
+        Instant.parse("2018-08-22T10:00:00Z"),
+        ZoneOffset.UTC));
+    ServiciosVideoclub sv = new ServiciosVideoclub();
 
 
   }
+
+
 }
+
+
+
+
+

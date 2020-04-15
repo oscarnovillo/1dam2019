@@ -18,13 +18,13 @@ public class ServiciosVideoclub {
 
     // add socio
     public boolean addSocio(Socio socio) {
-        //DaoSocios daoSocios = new DaoSocios();
+        DaoSocios daoSocios = new DaoSocios();
         return daoSocios.addSocio(socio);
     }
 
     // borrarSocio
     public boolean borrarSocio(String dni) {
-        //DaoSocios daoSocio = new DaoSocios();
+        DaoSocios daoSocio = new DaoSocios();
         if (daoSocios.getSocioPorNif(dni) != null) {
             return daoSocios.deleteSocio(daoSocios.getSocioPorNif(dni));
         }
@@ -65,7 +65,8 @@ public class ServiciosVideoclub {
             } else {
                 tiempoAlquiler = Configuration.getDiasAlquilerVideojuego();
             }
-            if (!daoAlquileres.alquilerSocio(nifSocio).getFechaAlquiler().plusSeconds(tiempoAlquiler).isAfter(LocalDateTime.now())) {
+            LocalDateTime ld = LocalDateTime.now();
+            if (!daoAlquileres.alquilerSocio(nifSocio).getFechaAlquiler().plusSeconds(tiempoAlquiler).isAfter(ld)) {
                 daoAlquileres.alquilerSocio(nifSocio).getSocio().setSancionado(true);
             }
             devolucion = daoAlquileres.borrarAlquiler(daoAlquileres.alquilerSocio(nifSocio));
@@ -93,7 +94,8 @@ public class ServiciosVideoclub {
                     "Disculpe las molestias";
         } else {
             p.setCantidadAlquilada(p.getCantidadAlquilada() + 1);
-            Alquiler alquiler = new Alquiler(LocalDateTime.now(), daoSocios.getSocioPorNif(nifSocio), p);
+            LocalDateTime ld = LocalDateTime.now();
+            Alquiler alquiler = new Alquiler(ld, daoSocios.getSocioPorNif(nifSocio), p);
             if(daoAlquileres.addAlquiler(alquiler)){
                 alquilado = "Producto alquilado correctamente\n" +
                         "MUCHAS GRACIAS";
