@@ -21,7 +21,13 @@ public class StreamsVideoClub {
     }
 
     public void mediaEdadDeSociosSancionados() {
-        System.out.println(socios.stream().filter(Socio::isSancionado).mapToInt(Socio::getEdad).average().getAsDouble());
+        System.out.println(socios.stream()
+            .filter(Socio::isSancionado)
+            .mapToInt(Socio::getEdad).average().getAsDouble());
+
+
+        socios.stream().sorted(Comparator.comparing(socio -> ((Socio)socio).getEdad()).reversed()).forEach(System.out::println);
+        socios.stream().sorted(Comparator.comparingInt(Socio::getEdad).reversed()).forEach(System.out::println);
     }
 
     /**
