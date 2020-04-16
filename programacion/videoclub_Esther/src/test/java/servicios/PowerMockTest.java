@@ -36,10 +36,11 @@ public class PowerMockTest {
     sv.addSocio(s);
     sv.alquilarProducto(p,"koko");
 
-    PowerMockito.when(LocalDateTime.now()).thenReturn(dummy.plusSeconds(Configuration.getDiasAlquilerPeliculas()));
+    PowerMockito.when(LocalDateTime.now()).thenReturn(dummy.plusSeconds(Configuration.getDiasAlquilerPeliculas()+1));
     sv.devolverProducto("koko",new Encuesta(8,true));
 
     assertThat(s.isSancionado()).isTrue();
+
   }
 
 
