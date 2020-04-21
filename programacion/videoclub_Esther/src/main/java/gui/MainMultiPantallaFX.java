@@ -1,16 +1,10 @@
 package gui;
 
 import gui.conf.StartupScene;
-import gui.controllers.Principal;
-import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import org.jboss.weld.environment.se.Weld;
-import org.jboss.weld.environment.se.WeldContainer;
 
 import javax.enterprise.event.Observes;
 import javax.inject.Inject;

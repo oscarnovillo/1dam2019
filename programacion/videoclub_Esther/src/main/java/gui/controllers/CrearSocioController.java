@@ -7,17 +7,17 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
+import org.controlsfx.validation.ValidationSupport;
+import org.controlsfx.validation.Validator;
+import org.controlsfx.validation.decoration.StyleClassValidationDecoration;
 import servicios.ServiciosVideoclub;
 
-import javax.inject.Inject;
-import javax.validation.Validation;
-import javax.validation.Validator;
-import javax.validation.ValidatorFactory;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class CrearSocio implements Initializable {
+public class CrearSocioController implements Initializable {
 
+  ValidationSupport validationSupport;
   @FXML
   private TextField textDni;
   @FXML
@@ -28,22 +28,31 @@ public class CrearSocio implements Initializable {
   private TextField textTelefono;
   @FXML
   private TextField textEdad;
-
-
-
-
-  @Inject
-  private ServiciosVideoclub sv;
-
   private Alert a;
+
+  public void setTextDni(String texto) {
+    this.textDni.setText(texto);
+  }
 
   @Override
   public void initialize(URL location, ResourceBundle resources) {
     a = new Alert(Alert.AlertType.INFORMATION);
+    validationSupport = new ValidationSupport();
+    validationSupport.setErrorDecorationEnabled(false);
+    validationSupport.setValidationDecorator(new StyleClassValidationDecoration("error","warning"));
+    validationSupport.registerValidator(textDni, Validator.createEmptyValidator("Tiene q tener texto"));
+
+    validationSupport.registerValidator(textEdad, Validator.combine(
+        Validator.createEmptyValidator("Tiene q tener texto"),
+        Validator.createPredicateValidator(o -> ((String) o).chars().allMatch(Character::isDigit) || ((String) o).isEmpty(), "solo numeros")));
   }
 
 
   private String comprobarSocio() {
+    validationSupport.setErrorDecorationEnabled(true);
+    if (!validationSupport.getValidationResult().getMessages().isEmpty()) {
+      return "error de decoracion";
+    }
     if (!textDni.getText().isEmpty() && !textNombre.getText().isEmpty() && !textDireccion.getText().isEmpty()
         && !textTelefono.getText().isEmpty() && !textEdad.getText().isEmpty()) {
 
@@ -62,17 +71,14 @@ public class CrearSocio implements Initializable {
 
   @FXML
   private void crearSocio(ActionEvent actionEvent) {
-    //sv = new ServiciosVideoclub();
-    boolean creado = false;
+    ServiciosVideoclub sv = new ServiciosVideoclub();
+    String creado = "";
+
     String error = comprobarSocio();
     if (error == null) {
-//      ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
-//      Validator val = factory.getValidator();
-//      val.validate(book).stream().forEach(bookConstraintViolation ->
-//          System.out.println(bookConstraintViolation.getMessage()));
       creado = sv.addSocio(new Socio(textDni.getText(), textNombre.getText(), textDireccion.getText(),
           textTelefono.getText(), Integer.parseInt(textEdad.getText())));
-      if (creado) {
+      if (creado.isEmpty()) {
         a.setContentText("socio creado");
       } else {
         a.setContentText("socio ya existia");
@@ -103,7 +109,7 @@ public class CrearSocio implements Initializable {
     textNombre.setText(nombre);
     textDireccion.setText(direccion);
     textTelefono.setText(tel);
-    textEdad.setText(""+edad);
+    textEdad.setText("" + edad);
 
   }
 }

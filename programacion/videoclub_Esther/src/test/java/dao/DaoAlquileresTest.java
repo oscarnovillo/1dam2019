@@ -40,6 +40,12 @@ class DaoAlquileresTest {
  //   dao.borrarAlquiler(alquiler);
   }
 
+  @AfterAll
+  void limpiar()
+  {
+    dao.borrarAlquiler(alquilerEsperado);
+  }
+
 
   //ParametrizedTest
   @Test

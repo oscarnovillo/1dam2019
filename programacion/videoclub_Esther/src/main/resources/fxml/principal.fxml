@@ -5,9 +5,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane fx:id="pantallaPrincipal" minHeight="400.0" minWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.Principal">
+<BorderPane fx:id="pantallaPrincipal" minHeight="400.0" minWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.PrincipalController">
    <top>
-      <MenuBar BorderPane.alignment="CENTER">
+      <MenuBar fx:id="menu" visible="false" BorderPane.alignment="CENTER">
         <menus>
           <Menu mnemonicParsing="false" text="Producto">
             <items>

@@ -8,18 +8,35 @@ import dao.DaoSociosI;
 import dao.modelo.*;
 
 import javax.inject.Inject;
+import javax.validation.Validation;
+import javax.validation.Validator;
+import javax.validation.ValidatorFactory;
 import java.time.LocalDateTime;
 import java.util.List;
 
 public class ServiciosVideoclub {
 
-    @Inject
+
     private DaoSocios daoSocios;
 
     // add socio
-    public boolean addSocio(Socio socio) {
-        DaoSocios daoSocios = new DaoSocios();
-        return daoSocios.addSocio(socio);
+    public String addSocio(Socio socio) {
+
+        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+        Validator validator = factory.getValidator();
+
+        final StringBuilder error = new StringBuilder();
+        validator.validate(socio).stream().forEach(bookConstraintViolation ->
+            error.append(bookConstraintViolation.getMessage()));
+
+        if (error.length() <= 0) {
+            DaoSocios daoSocios = new DaoSocios();
+            if (daoSocios.addSocio(socio))
+            {
+                return "";
+            }
+        }
+        return error.toString();
     }
 
     // borrarSocio

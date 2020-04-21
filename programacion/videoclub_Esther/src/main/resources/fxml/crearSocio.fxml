@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" stylesheets="/styles/fx.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.CrearSocio">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="/styles/fx.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.CrearSocioController">
    <children>
       <Label layoutX="157.0" layoutY="62.0" text="dni" />
       <Label layoutX="136.0" layoutY="93.0" text="nombre" />
@@ -20,5 +20,6 @@
       <Button layoutX="331.0" layoutY="240.0" mnemonicParsing="false" text="actualizar" />
       <Button layoutX="419.0" layoutY="240.0" mnemonicParsing="false" text="borrar" />
       <Button layoutX="355.0" layoutY="179.0" mnemonicParsing="false" onAction="#rellenarConFaker" text="RellenarFaker" />
+
    </children>
 </AnchorPane>

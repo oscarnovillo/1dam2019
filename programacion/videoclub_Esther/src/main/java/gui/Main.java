@@ -45,7 +45,7 @@ public class Main {
           String tel = f.phoneNumber().toString();
           int edad = f.number().numberBetween(1, 99);
           Socio socio = new Socio(dni, nombre, direccion, tel, edad);
-          if (sv.addSocio(socio)) {
+          if (sv.addSocio(socio)!=null) {
             System.out.println("Socio registrado");
           } else {
             System.out.println("Este socio ya se encuentra en nuestra base de datos");

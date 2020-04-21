@@ -19,8 +19,8 @@ public class MainFX extends Application {
   @Override
   public void start(Stage primaryStage) throws IOException {
     FXMLLoader loaderMenu = new FXMLLoader(
-        getClass().getResource("/fxml/tst.fxml"));
-    AnchorPane root = loaderMenu.load();
+        getClass().getResource("/fxml/principal.fxml"));
+    BorderPane root = loaderMenu.load();
     Scene scene = new Scene(root);
     primaryStage.setTitle("HOLA SOY YO");
     primaryStage.setScene(scene);
