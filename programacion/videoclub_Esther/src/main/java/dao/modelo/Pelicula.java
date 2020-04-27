@@ -1,10 +1,12 @@
 package dao.modelo;
 
+import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Pelicula extends Documental{
 
+  @Size(min=1)
   private List<String> actores;
 
   public Pelicula(String titulo, int cantidad, String genero, FormatoPelicula formato, String director, String duracion) {

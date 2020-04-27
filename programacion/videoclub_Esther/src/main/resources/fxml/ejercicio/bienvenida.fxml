@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ejercicio.controllers.BienvenidaController">
+    <children>
+        <Label fx:id="labelBienvenida" layoutX="112.0" layoutY="56.0" text="Bienvenida">
+            <font>
+                <Font size="61.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="imagenBienvenida" fitHeight="150.0" fitWidth="200.0" layoutX="176.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/images/m1.jpg" />
+         </image></ImageView>
+    </children>
+</AnchorPane>

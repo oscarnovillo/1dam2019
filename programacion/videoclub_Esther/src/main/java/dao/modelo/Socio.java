@@ -1,14 +1,25 @@
 package dao.modelo;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
 import java.util.Objects;
 
 public class Socio {
 
+  @NotEmpty(message ="nif no nulo")
   private String nif;
+  @NotEmpty
   private String nombre;
   private String direccion;
+
   private String telefono;
+
+  @Min(value=18, message="edad mayor que 18")
+  @Max(80)
   private int edad;
+
   private boolean sancionado;
 
 

@@ -1,5 +1,6 @@
 package dao.modelo;
 
+import javax.validation.constraints.Positive;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -8,6 +9,7 @@ public abstract class Producto {
 
     private String titulo;
     private List<Encuesta> encuestas;
+    @Positive
     private int cantidad;
     private int cantidadAlquilada;
     private String genero;

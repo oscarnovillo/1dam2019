@@ -20,22 +20,21 @@ public class LoginController implements Initializable {
 
   public LoginController() {
     this.mensaje = "kk";
+
   }
 
   public void setPrincipalController(PrincipalController principalController) {
     this.principalController = principalController;
   }
 
-  public void setMensaje(String mensaje) {
-    this.mensaje = mensaje;
-  }
+  // funciona para que la llame el principal
+  public void cambiarBoton(String mensaje) {
 
-  public void cambiarBoton(String mensaje)
-  {
     boton.setText(mensaje);
   }
 
-  public void login(ActionEvent actionEvent) throws IOException {
+  @FXML
+  private void login(ActionEvent actionEvent) throws IOException {
     principalController.despuesLogin("Conseguido");
   }
 

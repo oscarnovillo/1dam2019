@@ -1,6 +1,7 @@
 package dao.modelo;
 
 public class Encuesta {
+
     private int nota;
     private boolean realquilar;
 

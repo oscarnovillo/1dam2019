@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:id="pantallaPrincipal" minHeight="400.0"
+            minWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            fx:controller="gui.ejercicio.controllers.PrincipalController">
+    <top>
+        <MenuBar fx:id="menuPrincipal" visible="false" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu fx:id="menuAdmin" mnemonicParsing="false" text="admin">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#menuVerDatosAdmin" text="ver datos"/>
+                    </items>
+                </Menu>
+                <Menu fx:id="menuUsuario" mnemonicParsing="false" text="usuario">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#menuVerDatosUsuario" text="ver datos"/>
+                    </items>
+                </Menu>
+                <Menu fx:id="menuComun" mnemonicParsing="false" text="comun">
+                    <items>
+                        <MenuItem fx:id="menuLogout" onAction="#menuLogout"  mnemonicParsing="false" text="logout"/>
+                        <MenuItem fx:id="menuComunAdmin" mnemonicParsing="false" text="ver admin"/>
+                        <MenuItem fx:id="menuComunUsuario" mnemonicParsing="false" text="ver usuario"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+
+    </center>
+</BorderPane>

@@ -1,6 +1,7 @@
 package gui.controllers;
 
 import dao.DaoSocios;
+import dao.implentaciones.DaoSociosImpl;
 import dao.modelo.Socio;
 import dao.modelo.Videojuego;
 import javafx.event.ActionEvent;
@@ -70,7 +71,7 @@ public class TestController implements Initializable {
   @Override
   public void initialize(URL location, ResourceBundle resources) {
     textCaja.setText("hola");
-    DaoSocios dao = new DaoSocios();
+    DaoSocios dao = new DaoSociosImpl();
     comboPersonas.getItems().addAll(dao.getSocios());
     listSocios.getItems().addAll(dao.getSocios());
 

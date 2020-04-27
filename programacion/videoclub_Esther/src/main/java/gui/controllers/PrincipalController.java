@@ -9,6 +9,7 @@ import javafx.scene.control.MenuBar;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
 
 import javax.inject.Inject;
 import java.io.IOException;
@@ -36,26 +37,33 @@ public class PrincipalController implements Initializable {
   private AnchorPane pantallaVerSocio;
   private AnchorPane pantallaSecundaria;
 
+  private Pane bienvenida;
+
   private AnchorPane pantallaLogin;
   private LoginController loginController;
 
 
 
 
+  // Esto se llama desde el login
   public void despuesLogin(String mensaje) throws IOException {
     menu.setVisible(true);
-    crearSocioController.setTextDni(mensaje);
+   // crearSocioController.setTextDni(mensaje);
     menuCrearSocio();
   }
 
-  @FXML
-  private void verSocios() throws IOException {
+  public void ponerPantallaSocios() throws IOException {
     if (pantallaVerSocio == null) {
       FXMLLoader loaderMenu = new FXMLLoader(
           getClass().getResource("/fxml/verSocios.fxml"));
       pantallaVerSocio = loaderMenu.load();
     }
     pantallaPrincipal.setCenter(pantallaVerSocio);
+  }
+
+  @FXML
+  private void verSocios() throws IOException {
+    ponerPantallaSocios();
   }
 
   @FXML
@@ -68,6 +76,7 @@ public class PrincipalController implements Initializable {
       loginController = loaderMenu.getController();
       loginController.cambiarBoton("mensaje cambiado");
       loginController.setPrincipalController(this);
+
     }
     pantallaPrincipal.setCenter(pantallaLogin);
   }
@@ -111,7 +120,6 @@ public class PrincipalController implements Initializable {
 
   @Override
   public void initialize(URL location, ResourceBundle resources) {
-
 
 
     try {

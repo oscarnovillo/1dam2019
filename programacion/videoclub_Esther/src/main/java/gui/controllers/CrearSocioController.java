@@ -2,11 +2,15 @@ package gui.controllers;
 
 import com.github.javafaker.Faker;
 import dao.modelo.Socio;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import org.controlsfx.tools.ValueExtractor;
 import org.controlsfx.validation.ValidationSupport;
 import org.controlsfx.validation.Validator;
 import org.controlsfx.validation.decoration.StyleClassValidationDecoration;
@@ -14,9 +18,14 @@ import servicios.ServiciosVideoclub;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.stream.Collectors;
 
 public class CrearSocioController implements Initializable {
 
+  @FXML
+  private ListView<String> list;
+  @FXML
+  private ComboBox combo;
   ValidationSupport validationSupport;
   @FXML
   private TextField textDni;
@@ -34,39 +43,61 @@ public class CrearSocioController implements Initializable {
     this.textDni.setText(texto);
   }
 
+  private void configuracionValidacion() {
+
+    combo.getItems().add("primero");
+    list.getItems().add("list");
+    validationSupport = new ValidationSupport();
+    validationSupport.setErrorDecorationEnabled(false);
+    validationSupport.setValidationDecorator(new StyleClassValidationDecoration("error", "warning"));
+
+    validationSupport.registerValidator(textDni, Validator.createEmptyValidator("dni no vacio"));
+    validationSupport.registerValidator(list, Validator.createEmptyValidator("list no vacio"));
+//    ValueExtractor.addObservableValueExtractor(c -> c == list,
+//        c -> ((ListView) c).getSelectionModel().selectedItemProperty());
+//    validationSupport.registerValidator(list, Validator.createPredicateValidator(o -> o!= null ,"list view sin seleccion"));
+
+    validationSupport.registerValidator(textEdad, Validator.combine(
+        Validator.createEmptyValidator("edad: Tiene q tener texto"),
+        Validator.createPredicateValidator(o ->
+            ((String) o).chars().allMatch(Character::isDigit)
+                , "edad: solo numeros")));
+
+  }
+
   @Override
   public void initialize(URL location, ResourceBundle resources) {
     a = new Alert(Alert.AlertType.INFORMATION);
-    validationSupport = new ValidationSupport();
-    validationSupport.setErrorDecorationEnabled(false);
-    validationSupport.setValidationDecorator(new StyleClassValidationDecoration("error","warning"));
-    validationSupport.registerValidator(textDni, Validator.createEmptyValidator("Tiene q tener texto"));
-
-    validationSupport.registerValidator(textEdad, Validator.combine(
-        Validator.createEmptyValidator("Tiene q tener texto"),
-        Validator.createPredicateValidator(o -> ((String) o).chars().allMatch(Character::isDigit) || ((String) o).isEmpty(), "solo numeros")));
+    configuracionValidacion();
   }
 
 
-  private String comprobarSocio() {
+  private String comprobarSocioGUI() {
     validationSupport.setErrorDecorationEnabled(true);
     if (!validationSupport.getValidationResult().getMessages().isEmpty()) {
-      return "error de decoracion";
-    }
-    if (!textDni.getText().isEmpty() && !textNombre.getText().isEmpty() && !textDireccion.getText().isEmpty()
-        && !textTelefono.getText().isEmpty() && !textEdad.getText().isEmpty()) {
 
-      textEdad.getText().chars().allMatch(Character::isDigit);
+      return validationSupport.getValidationResult().getMessages()
+          .stream()
+          .map(validationMessage -> validationMessage.getText())
+          .collect(Collectors.joining("\n"));
 
-      try {
-        Integer.parseInt(textEdad.getText());
-      } catch (Exception e) {
-        return "Edad no es un numero";
-      }
-    } else {
-      return "algun campo vacio";
     }
     return null;
+
+//    if (!textDni.getText().isEmpty() && !textNombre.getText().isEmpty()
+//        && !textTelefono.getText().isEmpty() && !textEdad.getText().isEmpty()) {
+//
+//      textEdad.getText().chars().allMatch(Character::isDigit);
+//
+//      try {
+//        Integer.parseInt(textEdad.getText());
+//      } catch (Exception e) {
+//        return "Edad no es un numero";
+//      }
+//    } else {
+//      return "algun campo vacio";
+//    }
+
   }
 
   @FXML
@@ -74,14 +105,14 @@ public class CrearSocioController implements Initializable {
     ServiciosVideoclub sv = new ServiciosVideoclub();
     String creado = "";
 
-    String error = comprobarSocio();
+    String error = comprobarSocioGUI();
     if (error == null) {
       creado = sv.addSocio(new Socio(textDni.getText(), textNombre.getText(), textDireccion.getText(),
           textTelefono.getText(), Integer.parseInt(textEdad.getText())));
       if (creado.isEmpty()) {
-        a.setContentText("socio creado");
+        a.setContentText("creado");
       } else {
-        a.setContentText("socio ya existia");
+        a.setContentText(creado);
       }
     } else {
       a.setContentText(error);

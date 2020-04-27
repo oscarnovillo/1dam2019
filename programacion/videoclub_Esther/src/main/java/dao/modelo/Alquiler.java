@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class Alquiler {
+
     private LocalDateTime fechaAlquiler;
     private Socio socio;
     private Producto productoAlquilado;

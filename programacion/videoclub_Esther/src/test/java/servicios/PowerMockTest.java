@@ -7,7 +7,6 @@ import dao.modelo.Pelicula;
 import dao.modelo.Socio;
 
 import org.junit.Test;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.runner.RunWith;
 import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;

@@ -1,5 +1,6 @@
 package dao;
 
+import dao.implentaciones.DaoProductosImpl;
 import dao.modelo.Documental;
 import dao.modelo.FormatoPelicula;
 import dao.modelo.Pelicula;
@@ -23,7 +24,7 @@ class DaoProductosTest {
   @Test
   void getTodasPeliculas() {
     //Given
-    DaoProductos dao = new DaoProductos();
+    DaoProductos dao = new DaoProductosImpl();
     Pelicula p = new Pelicula("pelicula1",1,"", FormatoPelicula.DVD,"emilly","1");
     Documental d = new Documental("pelicula1",1,"", FormatoPelicula.DVD,"emilly","1");
     Videojuego v = new Videojuego("pelicula1",1,"","");

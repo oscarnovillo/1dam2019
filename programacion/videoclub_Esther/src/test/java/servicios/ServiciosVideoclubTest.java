@@ -1,6 +1,5 @@
 package servicios;
 
-import dao.DaoAlquileres;
 import dao.modelo.*;
 import org.junit.jupiter.api.Test;
 

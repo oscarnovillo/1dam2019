@@ -1,5 +1,3 @@
-
-
 .label{
     -fx-background-color: #76d4ff;
     -fx-text-fill: black;
@@ -7,6 +5,7 @@
 .label:hover{
     -fx-background-color: #2a27ff;
     -fx-text-fill: white;
+
 }
 .pane{
     -fx-background-color: red;
