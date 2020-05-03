@@ -1,7 +1,0 @@
-
-f
-java:S1450"PRemove the "a" field and declare it as a local variable in the relevant methods.( ã‚ç
-;
-java:S1068"%Remove this unused "a" private field.( ã‚ç
-X	java:S125'"<This block of commented-out lines of code should be removed.(‰≥™«8≠∏Â€ñ.
-X	java:S1252"<This block of commented-out lines of code should be removed.(é∆˝Î8≠∏Â€ñ.

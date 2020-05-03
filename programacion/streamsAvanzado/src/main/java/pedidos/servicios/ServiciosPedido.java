@@ -30,18 +30,18 @@ public class ServiciosPedido {
     return daoClientes.getClientePorEmail(email);
   }
 
-  public Cuenta addCuentaACliente(String email, Faker f) {
+  public Cuenta addCuentaACliente(String email, String numeroTarjetaCliente) {
     DaoClientes daoClientes = new DaoClientes();
     Cuenta cuenta = null;
 
     Cliente cliente = getClientePorEmail(email);
     if (cliente != null) {
       String tarjeta;
-      do {
-        tarjeta = f.idNumber().valid();
-      } while (!comprobarTC(tarjeta));
-      cuenta = new Cuenta(tarjeta);
-      daoClientes.addCuenta(cuenta, cliente);
+        tarjeta = numeroTarjetaCliente;
+        if (comprobarTC(tarjeta)) {
+          cuenta = new Cuenta(tarjeta);
+          daoClientes.addCuenta(cuenta, cliente);
+        }
     }
     return cuenta;
   }

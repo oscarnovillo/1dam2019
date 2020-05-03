@@ -1,0 +1,9 @@
+
+X	java:S125+"<This block of commented-out lines of code should be removed.(¼´á8ø—Ğì—.
+]	java:S1256"<This block of commented-out lines of code should be removed.(ûıÉ­ÿÿÿÿÿ8’Åóì—.
+]	java:S125#"<This block of commented-out lines of code should be removed.(ŞÇÎÿÿÿÿÿ8ÏÊöì—.
+T	java:S1065"9Replace this use of System.out or System.err by a logger.(‡È§98ç°Åì—.
+I
+java:S16120",Replace this lambda with a method reference.( ¤±×8‰Ùæ˜.
+I
+java:S16123",Replace this lambda with a method reference.(·´¥8‰Ùæ˜.

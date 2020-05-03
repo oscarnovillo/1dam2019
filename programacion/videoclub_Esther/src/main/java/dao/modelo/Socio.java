@@ -1,9 +1,8 @@
 package dao.modelo;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotEmpty;
+import com.sun.tracing.dtrace.ProviderAttributes;
+
+import javax.validation.constraints.*;
 import java.util.Objects;
 
 public class Socio {
@@ -12,12 +11,14 @@ public class Socio {
   private String nif;
   @NotEmpty
   private String nombre;
+
   private String direccion;
+
 
   private String telefono;
 
   @Min(value=18, message="edad mayor que 18")
-  @Max(80)
+  @Max(value=80,message="eres demasiado viejo")
   private int edad;
 
   private boolean sancionado;

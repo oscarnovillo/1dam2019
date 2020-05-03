@@ -1,23 +1,16 @@
 
-œ
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(È—ú8÷»Ë¹.
-¡
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(„ÉØÖøÿÿÿÿ8÷»Ë¹.
-œ
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Òãİò8÷»Ë¹.
-œ
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(úÇ¾€8÷»Ë¹.
-œ
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ù®äÄ8÷»Ë¹.
-œ
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(š‰ÔĞ8÷»Ë¹.
-¡
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ºÜêáşÿÿÿÿ8÷»Ë¹.
-œ
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(»şÏş8÷»Ë¹.
-¡
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(çÜâùÿÿÿÿ8÷»Ë¹.
-œ
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‰’ôØ8÷»Ë¹.
-œ
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(„ªÊ8÷»Ë¹.
+Z	java:S106-"9Replace this use of System.out or System.err by a logger.(Áé”“ıÿÿÿÿ8ıÂøŸ˜.
+U	java:S1069"9Replace this use of System.out or System.err by a logger.(“ğòº8ıÂøŸ˜.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(‚ø¾‰8óâ°…—.
+Z	java:S106D"9Replace this use of System.out or System.err by a logger.(¹¦…‡úÿÿÿÿ8ıÂøŸ˜.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(øÈêî8­˜© ˜.
+Z	java:S106'"9Replace this use of System.out or System.err by a logger.(Ëöºİüÿÿÿÿ8ıÂøŸ˜.
+Z	java:S106R"9Replace this use of System.out or System.err by a logger.(Ëöºİüÿÿÿÿ8ıÂøŸ˜.
+T
+java:S36559"7Call "Optional#isPresent()" before accessing the value.(“ğòº8ıÂøŸ˜.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(´É˜ı8óâ°…—.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(°É‘øúÿÿÿÿ8÷¯© ˜.
+U	java:S1065"9Replace this use of System.out or System.err by a logger.(ÀƒÊÏ8ıÂøŸ˜.
+Z	java:S106K"9Replace this use of System.out or System.err by a logger.(Ëöºİüÿÿÿÿ8ıÂøŸ˜.
+Z	java:S106a"9Replace this use of System.out or System.err by a logger.(°›˜Ïıÿÿÿÿ8ıÂøŸ˜.
+Z	java:S106X"9Replace this use of System.out or System.err by a logger.(–Ôÿ¨ûÿÿÿÿ8ıÂøŸ˜.

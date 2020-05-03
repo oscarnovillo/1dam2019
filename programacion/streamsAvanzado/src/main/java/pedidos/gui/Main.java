@@ -75,7 +75,7 @@ public class Main {
     public static void setup(ServiciosPedido sp, Faker f) {
         Cliente cliente1 = new Cliente(f.gameOfThrones().character(), f.gameOfThrones().city(), f.phoneNumber().toString(), "1@1.com");
         sp.addCliente(cliente1);
-        sp.addCuentaACliente("1@1.com", f);
+        sp.addCuentaACliente("1@1.com", f.idNumber().valid());
     }
 
     public static void addClienteNuevo(Faker f, ServiciosPedido sp) {
@@ -95,12 +95,12 @@ public class Main {
     public static void crearCuenta(ServiciosPedido sp, Faker f, Scanner sc) {
         System.out.println("Dime el email de tu cuenta para poder crearte una nueva cuenta de credito");
         String email = sc.nextLine();
-//        if (sp.addCuentaACliente(email, f)) {
-//            System.out.println("Ahora tus cuentas son: ");
-//            imprimirCuentas(sp.getClientePorEmail(email).getCuentas());
-//        } else {
-//            System.out.println("Este email no esta asociado a ningun cliente registrado");
-//        }
+        if (sp.addCuentaACliente(email, f.idNumber().valid())!=null) {
+            System.out.println("Ahora tus cuentas son: ");
+            imprimirCuentas(sp.getClientePorEmail(email).getCuentas());
+        } else {
+            System.out.println("Este email no esta asociado a ningun cliente registrado");
+        }
     }
 
     public static void addSaldo(ServiciosPedido sp, Scanner sc) {

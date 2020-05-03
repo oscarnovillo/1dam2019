@@ -1,16 +1,12 @@
 
-V	java:S125"<This block of commented-out lines of code should be removed.(Â–¾Ò8®¸åÛ–.
-[	java:S125"<This block of commented-out lines of code should be removed.(êçÃ…ÿÿÿÿÿ8®¸åÛ–.
-[	java:S125"<This block of commented-out lines of code should be removed.(»•ûÿÿÿÿ8®¸åÛ–.
-U	java:S125"<This block of commented-out lines of code should be removed.(¤ŒÀ78®¸åÛ–.
-O
-java:S1128";Remove this unused import 'javafx.scene.layout.AnchorPane'.(Ø µ
-V	java:S125"<This block of commented-out lines of code should be removed.(„îãá8®¸åÛ–.
-C
-java:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8®¸åÛ–.
 V	java:S125"<This block of commented-out lines of code should be removed.(ÀèŠ8®¸åÛ–.
-U
-java:S1128";Remove this unused import 'javafx.application.Application'.(í™şj8®¸åÛ–.
-[	java:S125"<This block of commented-out lines of code should be removed.(‹„ÍÚÿÿÿÿÿ8®¸åÛ–.
+U	java:S125"<This block of commented-out lines of code should be removed.(¤ŒÀ78®¸åÛ–.
+[	java:S125"<This block of commented-out lines of code should be removed.(êçÃ…ÿÿÿÿÿ8®¸åÛ–.
 V	java:S125"<This block of commented-out lines of code should be removed.(—Ğìó8®¸åÛ–.
 V	java:S125"<This block of commented-out lines of code should be removed.(äÕİŸ8®¸åÛ–.
+[	java:S125"<This block of commented-out lines of code should be removed.(‹„ÍÚÿÿÿÿÿ8®¸åÛ–.
+C
+java:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8®¸åÛ–.
+V	java:S125"<This block of commented-out lines of code should be removed.(Â–¾Ò8®¸åÛ–.
+V	java:S125"<This block of commented-out lines of code should be removed.(„îãá8®¸åÛ–.
+[	java:S125"<This block of commented-out lines of code should be removed.(»•ûÿÿÿÿ8®¸åÛ–.

@@ -1,16 +1,16 @@
 
-S	java:S106"9Replace this use of System.out or System.err by a logger.(óÍ›­8Àà›à‘.
-H
-java:S1481"-Remove this unused "alquiler" local variable.(“’Â¥8Àà›à‘.
-P
-java:S1854"5Remove this useless assignment to local variable "f".(î·Üˆ8Àà›à‘.
-A
-java:S1481"&Remove this unused "f" local variable.(î·Üˆ8Àà›à‘.
-X	java:S106"9Replace this use of System.out or System.err by a logger.(Ý²ŠÓþÿÿÿÿ8Àà›à‘.
-X	java:S106"9Replace this use of System.out or System.err by a logger.(¥“Û–úÿÿÿÿ8Àà›à‘.
-9
-java:S2119"Save and re-use this "Random".(¡Å”¦8Àà›à‘.
-W
-java:S1854"<Remove this useless assignment to local variable "alquiler".(“’Â¥8Àà›à‘.
-9
-java:S2119"Save and re-use this "Random".(¡Å”¦8Àà›à‘.
+Y
+java:S1854N"<Remove this useless assignment to local variable "alquiler".(“’Â¥8Àà›à‘.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¥“Û–úÿÿÿÿ8Àà›à‘.
+;
+java:S2119H"Save and re-use this "Random".(¡Å”¦8Àà›à‘.
+R
+java:S1854G"5Remove this useless assignment to local variable "f".(î·Üˆ8Àà›à‘.
+;
+java:S2119-"Save and re-use this "Random".(¡Å”¦8Àà›à‘.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(óÍ›­8Àà›à‘.
+J
+java:S1481N"-Remove this unused "alquiler" local variable.(“’Â¥8Àà›à‘.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ý²ŠÓþÿÿÿÿ8Àà›à‘.
+C
+java:S1481G"&Remove this unused "f" local variable.(î·Üˆ8Àà›à‘.

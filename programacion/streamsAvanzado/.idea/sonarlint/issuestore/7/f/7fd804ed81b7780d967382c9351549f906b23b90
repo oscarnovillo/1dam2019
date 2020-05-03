@@ -1,7 +1,9 @@
 
-W
-java:S1854";Remove this useless assignment to local variable "cliente".(Ì²®¢úÿÿÿÿ
 H
 java:S1481",Remove this unused "cliente" local variable.(Ì²®¢úÿÿÿÿ
 A
 java:S11686"+Return an empty collection instead of null.(¥¹ï
+W
+java:S1854";Remove this useless assignment to local variable "cliente".(Ì²®¢úÿÿÿÿ
+T
+java:S1128"7Remove this unused import 'com.github.javafaker.Faker'.(û¹ªÕ8Ê“Å¿š.

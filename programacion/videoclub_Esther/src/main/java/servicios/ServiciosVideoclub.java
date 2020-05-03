@@ -9,6 +9,7 @@ import dao.modelo.*;
 import javax.validation.Validation;
 import javax.validation.Validator;
 import javax.validation.ValidatorFactory;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Positive;
 import javax.validation.constraints.PositiveOrZero;
 import java.time.LocalDateTime;
@@ -42,6 +43,10 @@ public class ServiciosVideoclub {
             {
                 return "";
             }
+            else
+            {
+                error = "socio ya existe";
+            }
         }
         return error.toString();
     }
@@ -69,7 +74,7 @@ public class ServiciosVideoclub {
     }
 
     
-    public boolean addProducto(Producto producto) {
+    public String addProducto(Producto producto) {
         ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
         Validator validator = factory.getValidator();
 
@@ -83,7 +88,11 @@ public class ServiciosVideoclub {
 
 
         DaoProductos daoProductos = new DaoProductosImpl();
-        return daoProductos.addProducto(producto);
+        boolean errorDao = daoProductos.addProducto(producto);
+        if (errorDao)
+            error = "no se pudo añadir en BD";
+
+        return error;
     }
 
     

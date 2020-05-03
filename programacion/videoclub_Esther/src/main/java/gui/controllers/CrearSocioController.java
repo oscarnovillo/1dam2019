@@ -1,6 +1,8 @@
 package gui.controllers;
 
 import com.github.javafaker.Faker;
+import dao.modelo.FormatoPelicula;
+import dao.modelo.Pelicula;
 import dao.modelo.Socio;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -16,6 +18,8 @@ import org.controlsfx.validation.Validator;
 import org.controlsfx.validation.decoration.StyleClassValidationDecoration;
 import servicios.ServiciosVideoclub;
 
+import javax.validation.Validation;
+import javax.validation.ValidatorFactory;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.stream.Collectors;
@@ -52,10 +56,10 @@ public class CrearSocioController implements Initializable {
     validationSupport.setValidationDecorator(new StyleClassValidationDecoration("error", "warning"));
 
     validationSupport.registerValidator(textDni, Validator.createEmptyValidator("dni no vacio"));
-    validationSupport.registerValidator(list, Validator.createEmptyValidator("list no vacio"));
-//    ValueExtractor.addObservableValueExtractor(c -> c == list,
-//        c -> ((ListView) c).getSelectionModel().selectedItemProperty());
-//    validationSupport.registerValidator(list, Validator.createPredicateValidator(o -> o!= null ,"list view sin seleccion"));
+    //validationSupport.registerValidator(list, Validator.createEmptyValidator("list no vacio"));
+    ValueExtractor.addObservableValueExtractor(c -> c == list,
+        c -> ((ListView) c).getSelectionModel().selectedItemProperty());
+    validationSupport.registerValidator(list, Validator.createPredicateValidator(o -> o!= null ,"list view sin seleccion"));
 
     validationSupport.registerValidator(textEdad, Validator.combine(
         Validator.createEmptyValidator("edad: Tiene q tener texto"),
@@ -90,7 +94,7 @@ public class CrearSocioController implements Initializable {
 //      textEdad.getText().chars().allMatch(Character::isDigit);
 //
 //      try {
-//        Integer.parseInt(textEdad.getText());
+//        Double.parseDouble(textEdad.getText());
 //      } catch (Exception e) {
 //        return "Edad no es un numero";
 //      }
@@ -107,6 +111,7 @@ public class CrearSocioController implements Initializable {
 
     String error = comprobarSocioGUI();
     if (error == null) {
+      creado = sv.addSocio(null);
       creado = sv.addSocio(new Socio(textDni.getText(), textNombre.getText(), textDireccion.getText(),
           textTelefono.getText(), Integer.parseInt(textEdad.getText())));
       if (creado.isEmpty()) {

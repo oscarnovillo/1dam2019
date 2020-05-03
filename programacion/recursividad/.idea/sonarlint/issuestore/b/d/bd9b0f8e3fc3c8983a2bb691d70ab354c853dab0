@@ -1,0 +1,14 @@
+
+L
+java:S1068
+"*Remove this unused "nombre" private field.(µÿï„ùÿÿÿÿ8÷‡Çë—.
+[
+java:S1068"9Remove this unused "probabilidadContagiar" private field.(˜‡Þßÿÿÿÿÿ8÷‡Çë—.
+U
+java:S1068"8Remove this unused "probabilidadContagio" private field.(¸ÝÌ·8÷‡Çë—.
+L
+java:S1068"*Remove this unused "inmune" private field.(ô–¨“úÿÿÿÿ8ÿõ•í—.
+M
+java:S1068"0Remove this unused "diasContagio" private field.(åÉÀÒ8©¤‘í—.
+U
+java:S1172"3Remove this unused method parameter "diasContagio".(ëÈžØûÿÿÿÿ8Åç‘í—.

@@ -1,0 +1,13 @@
+
+I
+java:S1068".Remove this unused "bienvenida" private field.(©ÑàÁ8µµ†¶š.
+C
+java:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§«Ÿ‹š.
+N
+java:S1172".Remove this unused method parameter "mensaje".(á™¦ìúÿÿÿÿ8ô·úØ›.
+X	java:S106"9Replace this use of System.out or System.err by a logger.(©şêÜúÿÿÿÿ8§«Ÿ‹š.
+[	java:S125"<This block of commented-out lines of code should be removed.(‡©¹øÿÿÿÿ8ô·úØ›.
+S
+java:S1068"8Remove this unused "crearSocioController" private field.(ã­¬8ô·úØ›.
+~
+java:S1450"^Remove the "loginController" field and declare it as a local variable in the relevant methods.(”¨ üÿÿÿÿ8§«Ÿ‹š.

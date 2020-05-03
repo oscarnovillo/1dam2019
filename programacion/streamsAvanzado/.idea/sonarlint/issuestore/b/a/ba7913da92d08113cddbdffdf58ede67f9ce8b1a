@@ -1,17 +1,10 @@
 
-G
-java:S1612",Replace this lambda with a method reference.(áï¨ü8¾ß‚Ù’.
-œ
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(øõÎ8Óéšà‘.
-¡
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.( äİóûÿÿÿÿ8Óéšà‘.
-F
-java:S1612",Replace this lambda with a method reference.(Å£Ñ8ÊºûØ’.
-œ
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÖÁŒó8Óéšà‘.
-V
-java:S1128";Remove this unused import 'pedidos.dao.modelo.LineaPedido'.(ı½ê8ÚàüØ’.
-¡
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(íÄ—úÿÿÿÿ8Óéšà‘.
-F
-java:S1612",Replace this lambda with a method reference.(Å£Ñ8ûÙ’.
+Y
+java:S3655"7Call "Optional#isPresent()" before accessing the value.(İÇ¨úÿÿÿÿ8Ñâ°…—.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(‘»—á8Ñâ°…—.
+U	java:S1067"9Replace this use of System.out or System.err by a logger.(‘»—á8Ñâ°…—.
+Z	java:S106'"9Replace this use of System.out or System.err by a logger.(·µ™¤ùÿÿÿÿ8Ñâ°…—.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(İÇ¨úÿÿÿÿ8Ñâ°…—.
+U	java:S106/"9Replace this use of System.out or System.err by a logger.(‘»—á8Ñâ°…—.
+N
+java:S1602&",Remove useless curly braces around statement(ÒÌâ–øÿÿÿÿ8Ñâ°…—.

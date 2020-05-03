@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Pelicula extends Documental{
 
-  @Size(min=1)
+  @Size(min=1,message = "actores no puede ser vacio")
   private List<String> actores;
 
   public Pelicula(String titulo, int cantidad, String genero, FormatoPelicula formato, String director, String duracion) {

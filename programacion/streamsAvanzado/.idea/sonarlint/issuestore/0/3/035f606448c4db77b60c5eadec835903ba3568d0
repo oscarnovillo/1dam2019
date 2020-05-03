@@ -1,12 +1,26 @@
 
-L
-java:S1602",Remove useless curly braces around statement(ãçëÁúÿÿÿÿ8°®˜Ø’.
-š
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(õ¾Â†ıÿÿÿÿ
-¡
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ï·™Áûÿÿÿÿ8‘ìà‘.
-S	java:S106"9Replace this use of System.out or System.err by a logger.(¶®ÎÇ8°®˜Ø’.
-•
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(öÒ¥
-š
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(†ˆ¯ÿüÿÿÿÿ
+P
+java:S11212".Extract the assignment out of this expression.(©÷ıÁùÿÿÿÿ8™õ±…—.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ĞØ–‡8™õ±…—.
+Z	java:S106="9Replace this use of System.out or System.err by a logger.(¹¦…‡úÿÿÿÿ8™õ±…—.
+H
+java:S1612 ",Replace this lambda with a method reference.(›¹·8™õ±…—.
+Y
+java:S3655"7Call "Optional#isPresent()" before accessing the value.(Şà÷Ìúÿÿÿÿ8™õ±…—.
+T
+java:S3655"7Call "Optional#isPresent()" before accessing the value.(ĞØ–‡8™õ±…—.
+P
+java:S11210".Extract the assignment out of this expression.(ïÏ’ùşÿÿÿÿ8™õ±…—.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Şà÷Ìúÿÿÿÿ8™õ±…—.
+K
+java:S11214".Extract the assignment out of this expression.(¸¾Äğ8™õ±…—.
+U	java:S1066"9Replace this use of System.out or System.err by a logger.(¹£ÿû8™õ±…—.
+Z	java:S106%"9Replace this use of System.out or System.err by a logger.(¦¤ç´úÿÿÿÿ8™õ±…—.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Şà÷Ìúÿÿÿÿ8™õ±…—.
+Y
+java:S3655"7Call "Optional#isPresent()" before accessing the value.(Şà÷Ìúÿÿÿÿ8™õ±…—.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ĞØ–‡8™õ±…—.
+N
+java:S1612%",Replace this lambda with a method reference.(¦¤ç´úÿÿÿÿ8™õ±…—.
+T
+java:S3655"7Call "Optional#isPresent()" before accessing the value.(ĞØ–‡8™õ±…—.

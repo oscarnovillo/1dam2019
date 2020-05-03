@@ -63,3 +63,11 @@ S
 #src/main/java/pedidos/gui/Main.java,5\1\51b3315742ca2d469912ef56d1e395295e5c740c
 ]
 -src/main/java/videoclub/dao/modelo/Socio.java,5\b\5b9df1141b6c1c3df475476d1a4b82f1181a7fa7
+S
+#src/main/java/main/MainMinimos.java,d\8\d8628d9d2bdac75eb9c84b992832a7fa45efbb97
+Y
+)src/main/java/pedidos/dao/DaoPedidos.java,9\c\9c92905703c1eba37c67caf0b904ca55638b128a
+Z
+*src/main/java/pedidos/dao/DaoClientes.java,9\a\9a47442405f79757656266620151c1d2687b5d66
+K
+src/test/java/Clientes.java,7\2\721072fc0cbd54188ec3484f10caf386e00ef75a

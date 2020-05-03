@@ -1,0 +1,8 @@
+
+f
+java:S1301C"KReplace this "switch" statement by "if" statements to increase readability.(¶ŸİÔùÿÿÿÿ
+f
+java:S1450+"PRemove the "a" field and declare it as a local variable in the relevant methods.(Ê‹â
+;
+java:S1068+"%Remove this unused "a" private field.(Ê‹â
+<	java:S131C""Add a default case to this switch.(¶ŸİÔùÿÿÿÿ

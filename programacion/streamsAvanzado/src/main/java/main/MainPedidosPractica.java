@@ -49,7 +49,7 @@ public class MainPedidosPractica {
       Random r = new Random();
       int numeroCuentas = r.nextInt(100) + 1;
       for (int j = 0; j < numeroCuentas; j++) {
-        sp.addCuentaACliente(email, f).setSaldo(r.nextInt(100) + 100);
+        sp.addCuentaACliente(email, f.idNumber().valid()).setSaldo(r.nextInt(100) + 100);
       }
     }
   }
