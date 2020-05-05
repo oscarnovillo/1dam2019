@@ -17,26 +17,33 @@ public class FileReadExample {
   public static void main(String[] args) {
 
 
-    try  (BufferedReader bw = Files.newBufferedReader(Paths.get("./testing.txt"));
-          BufferedInputStream os = new BufferedInputStream(Files.newInputStream(Paths.get("./testingBytes.dat")));
-          Stream<Path> stream = Files.list(Paths.get("./")))
-    {
-      stream.forEach(path -> System.out.println(path.toAbsolutePath().toString()+" "+Files.isDirectory(path)));
-      String linea  = null;
 
-      while ((linea =  bw.readLine()) != null)
+    try  (BufferedReader br = Files.newBufferedReader(Paths.get("./testing.txt"));
+          BufferedInputStream os = new BufferedInputStream(Files.newInputStream(Paths.get("./testingBytes.dat")));
+          )
+    {
+      String linea  = null;
+      do
       {
-        System.out.print(linea);
-      }
+        linea =  br.readLine();
+        if (linea != null)
+          System.out.println(linea);
+      } while (linea != null);
+
+      System.out.println("con Files");
+      Files.readAllLines(Paths.get("./testing.txt")).forEach(System.out::println);
+
+
+
 
       byte[]b = new byte[100];
       int number = os.read(b);
       number = 0;
 
-
     } catch (IOException e) {
       logger.log(Level.SEVERE,e.getMessage(),e);
     }
+    System.out.println("fin");
 
   }
 }

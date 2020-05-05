@@ -1,8 +1,6 @@
 package main;
 
-import java.io.BufferedOutputStream;
-import java.io.BufferedWriter;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -16,12 +14,19 @@ public class FileWriteExample {
   public static void main(String[] args) {
 
 
-    try  (BufferedWriter bw = Files.newBufferedWriter(Paths.get("./testing.txt"), StandardOpenOption.APPEND,StandardOpenOption.CREATE);
+    try  (BufferedWriter bw =
+              Files.newBufferedWriter(Paths.get("./testing.txt"),
+                  StandardOpenOption.APPEND);
           BufferedOutputStream os = new BufferedOutputStream(Files.newOutputStream(Paths.get("./testingBytes.dat")));
-          Stream<Path> stream = Files.list(Paths.get("./")))
+          )
     {
-      stream.forEach(path -> System.out.println(path.toAbsolutePath().toString()+" "+Files.isDirectory(path)));
-        bw.write("hola\n");
+        PrintWriter pw = new PrintWriter(bw);
+        pw.println("adios");
+        pw.printf("%3.2f el numero ",16.5788);
+
+        //bw.write("adios\nla");
+
+
         os.write("hola\n".getBytes());
         os.write(new byte[]{2,3,4,5,6,8});
 

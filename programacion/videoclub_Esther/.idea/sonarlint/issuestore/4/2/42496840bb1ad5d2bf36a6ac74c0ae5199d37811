@@ -1,21 +1,23 @@
 
-[	java:S125"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8»ñÃ«œ.
-^
-java:S1128">Remove this unused import 'javafx.collections.ObservableList'.(ÄÜ€éüÿÿÿÿ8¶‰Ôœ.
-L
-java:S1612",Replace this lambda with a method reference.(‚òòÄşÿÿÿÿ8»ñÃ«œ.
-L
-java:S1172"2Remove this unused method parameter "actionEvent".(İ±Ûg8»ñÃ«œ.
+N
+java:S1612U",Replace this lambda with a method reference.(‚òòÄşÿÿÿÿ8»ñÃ«œ.
+Z
+java:S1612>"=Replace this lambda with method reference 'Objects::nonNull'.(“„»É8»ñÃ«œ.
+`
+java:S1128">Remove this unused import 'javafx.collections.ObservableList'.(ÄÜ€éüÿÿÿÿ8¶‰Ôœ.
+X	java:S125^"<This block of commented-out lines of code should be removed.(İ‚‡8»ñÃ«œ.
+T
+java:S1128"7Remove this unused import 'dao.modelo.FormatoPelicula'.(î„ä±8¶‰Ôœ.
+O
+java:S1172‰"2Remove this unused method parameter "actionEvent".(İ±Ûg8»ñÃ«œ.
 R
-java:S1128"7Remove this unused import 'dao.modelo.FormatoPelicula'.(î„ä±8¶‰Ôœ.
-X
-java:S1128"8Remove this unused import 'javax.validation.Validation'.(·íØÈûÿÿÿÿ8¶‰Ôœ.
-X
-java:S1612"=Replace this lambda with method reference 'Objects::nonNull'.(“„»É8»ñÃ«œ.
-[	java:S125"<This block of commented-out lines of code should be removed.(é‰ªìøÿÿÿÿ8à·Å«œ.
-V	java:S125"<This block of commented-out lines of code should be removed.(İ‚‡8»ñÃ«œ.
-P
-java:S1128"0Remove this unused import 'dao.modelo.Pelicula'.(Ğ–¬üÿÿÿÿ8¶‰Ôœ.
-^
-java:S1128">Remove this unused import 'javax.validation.ValidatorFactory'.(é¦ğ”ıÿÿÿÿ8¶‰Ôœ.
-V	java:S125"<This block of commented-out lines of code should be removed.(àùÉ†8»ñÃ«œ.
+java:S1128"0Remove this unused import 'dao.modelo.Pelicula'.(Ğ–¬üÿÿÿÿ8¶‰Ôœ.
+W
+java:S1854r":Remove this useless assignment to local variable "creado".(öá¾¬8Î‘Ó².
+]	java:S125`"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8»ñÃ«œ.
+X	java:S125["<This block of commented-out lines of code should be removed.(àùÉ†8»ñÃ«œ.
+`
+java:S1128">Remove this unused import 'javax.validation.ValidatorFactory'.(é¦ğ”ıÿÿÿÿ8¶‰Ôœ.
+Z
+java:S1128"8Remove this unused import 'javax.validation.Validation'.(·íØÈûÿÿÿÿ8¶‰Ôœ.
+]	java:S125;"<This block of commented-out lines of code should be removed.(é‰ªìøÿÿÿÿ8à·Å«œ.

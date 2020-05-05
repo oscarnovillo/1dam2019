@@ -1,23 +1,25 @@
 
-X
-java:S1117"=Rename "daoSocios" which hides the field declared at line 21.(Š«µ8ƒ¿º«œ.
-U	java:S125"<This block of commented-out lines of code should be removed.(¬¡8ƒ¿º«œ.
-W
-java:S1854"<Remove this useless assignment to local variable "daoSocio".(¼š•î8ƒ¿º«œ.
-H
-java:S1481"-Remove this unused "daoSocio" local variable.(¼š•î8ƒ¿º«œ.
-X
-java:S1117"=Rename "daoSocios" which hides the field declared at line 21.(Š«µ8ƒ¿º«œ.
-V	java:S125"<This block of commented-out lines of code should be removed.(…‹Áà8ƒ¿º«œ.
-G
-java:S1612",Replace this lambda with a method reference.(˜ŠÀ8ƒ¿º«œ.
-G
-java:S1612",Replace this lambda with a method reference.(˜ŠÀ8ƒ¿º«œ.
-h
-java:S1858"H"error" is already a string, there's no need to call "toString()" on it.(åôĞõüÿÿÿÿ8ƒ¿º«œ.
-h
-java:S1128"HRemove this unused import 'javax.validation.constraints.PositiveOrZero'.(’É¢Íıÿÿÿÿ8ƒ¿º«œ.
-b
-java:S1128"BRemove this unused import 'javax.validation.constraints.Positive'.(º’úšøÿÿÿÿ8ƒ¿º«œ.
-V	java:S125"<This block of commented-out lines of code should be removed.(…‹Áà8ƒ¿º«œ.
-U	java:S125"<This block of commented-out lines of code should be removed.(¬¡8ƒ¿º«œ.
+W	java:S125"<This block of commented-out lines of code should be removed.(¬¡8ƒ¿º«œ.
+j
+java:S18583"H"error" is already a string, there's no need to call "toString()" on it.(åôĞõüÿÿÿÿ8ƒ¿º«œ.
+c
+java:S1128"ARemove this unused import 'javax.validation.constraints.NotNull'.(áç¥ãüÿÿÿÿ8‚äÖ².
+Z
+java:S1117)"=Rename "daoSocios" which hides the field declared at line 22.(Š«µ8ƒ¿º«œ.
+Y
+java:S18549"<Remove this useless assignment to local variable "daoSocio".(¼š•î8ƒ¿º«œ.
+W	java:S125Q"<This block of commented-out lines of code should be removed.(¬¡8ƒ¿º«œ.
+X	java:S125S"<This block of commented-out lines of code should be removed.(…‹Áà8ƒ¿º«œ.
+I
+java:S1612V",Replace this lambda with a method reference.(˜ŠÀ8ƒ¿º«œ.
+j
+java:S1128"HRemove this unused import 'javax.validation.constraints.PositiveOrZero'.(’É¢Íıÿÿÿÿ8ƒ¿º«œ.
+[
+java:S1117‡"=Rename "daoSocios" which hides the field declared at line 22.(Š«µ8ƒ¿º«œ.
+I
+java:S1612$",Replace this lambda with a method reference.(˜ŠÀ8ƒ¿º«œ.
+d
+java:S1128"BRemove this unused import 'javax.validation.constraints.Positive'.(º’úšøÿÿÿÿ8ƒ¿º«œ.
+J
+java:S14819"-Remove this unused "daoSocio" local variable.(¼š•î8ƒ¿º«œ.
+X	java:S125!"<This block of commented-out lines of code should be removed.(…‹Áà8ƒ¿º«œ.
