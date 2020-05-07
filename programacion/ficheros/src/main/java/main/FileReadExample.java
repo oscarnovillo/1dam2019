@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 public class FileReadExample {
 
 
-  public static Logger logger = Logger.getLogger("main.FileExample");
+  public Logger logger = Logger.getLogger("main.FileExample");
 
   public static void main(String[] args) {
 
@@ -41,7 +41,8 @@ public class FileReadExample {
       number = 0;
 
     } catch (IOException e) {
-      logger.log(Level.SEVERE,e.getMessage(),e);
+      FileReadExample f = new FileReadExample();
+      f.logger.log(Level.SEVERE,e.getMessage(),e);
     }
     System.out.println("fin");
 
