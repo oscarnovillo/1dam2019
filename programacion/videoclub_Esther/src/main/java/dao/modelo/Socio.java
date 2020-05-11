@@ -21,6 +21,7 @@ public class Socio {
   @Max(value=80,message="eres demasiado viejo")
   private int edad;
 
+
   private boolean sancionado;
 
 

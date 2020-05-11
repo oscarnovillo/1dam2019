@@ -1,5 +1,5 @@
 
-W
-java:S1191"5Use classes from the Java API instead of Sun classes.(´‚Ùâþÿÿÿÿ8Ë®šƒœ.
 h
 java:S1128"FRemove this unused import 'com.sun.tracing.dtrace.ProviderAttributes'.(´‚Ùâþÿÿÿÿ8Ë®šƒœ.
+W
+java:S1191"5Use classes from the Java API instead of Sun classes.(´‚Ùâþÿÿÿÿ8Ë®šƒœ.

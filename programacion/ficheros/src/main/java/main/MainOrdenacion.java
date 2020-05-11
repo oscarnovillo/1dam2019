@@ -10,6 +10,7 @@ import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -20,16 +21,16 @@ public class MainOrdenacion {
 
   public static void main(String[] args) {
       Set<Animal> animales = new TreeSet<>();
-      Animal a = new Animal("z",2);
+      Animal a = new Animal("z",2, LocalDate.of(2000,1,1));
       animales.add(a);
     animales.add(a);
-    animales.add(new Animal("z",5));
-    animales.add(new Animal("a",2));
-    animales.add(new Animal("b",2));
+    animales.add(new Animal("z",5,LocalDate.of(2000,1,1)));
+    animales.add(new Animal("a",2,LocalDate.of(2000,1,1)));
+    animales.add(new Animal("b",2,LocalDate.of(2000,1,1)));
 
     //animales.forEach(System.out::println);
 
-    animales.add(new Animal("c",2));
+    animales.add(new Animal("c",2,LocalDate.of(2000,1,1)));
     animales.forEach(System.out::println);
     try  (BufferedWriter bw =
               Files.newBufferedWriter(Paths.get("./animales.obj")
@@ -47,7 +48,7 @@ public class MainOrdenacion {
     try {
       Files.readAllLines(Paths.get("./animales.obj")).forEach(s -> {
         Animal animal = new Animal();
-        animal.cargar(s);
+       animal.cargar(s);
         animales2.add(animal);
       });
     } catch (IOException e) {

@@ -26,6 +26,7 @@ import java.util.Set;
 import java.util.TreeSet;
 import java.util.stream.Collectors;
 
+
 public class Explorer implements Initializable {
 
   private Logger log4j = LogManager.getLogger("mongo");
@@ -107,7 +108,7 @@ public class Explorer implements Initializable {
       listDirectorios.getItems().clear();
       listDirectorios.getItems().addAll(Files.list(path).collect(Collectors.toList()));
     } catch (IOException e) {
-      log4jGeneral.error(e.getMessage(), e);
+      log4jGeneral.error(e.getMessage(),e);
 
     }
   }

@@ -28,17 +28,18 @@
         </RollingRandomAccessFile>
 
         <NoSql name="databaseAppender">
-            <MongoDb3 databaseName="applicationDb" collectionName="applicationLog" server="dam2.tomcat.iesquevedo.es"
+            <MongoDb3 databaseName="applicationDb" collectionName="applicationLog"
+                      server="dam2.tomcat.iesquevedo.es"
                       port="3334" />
         </NoSql>
     </Appenders>
 
     <Loggers>
-        <Logger name="mongo" level="TRACE" additivity="true">
+        <Logger name="mongo" level="TRACE" additivity="false">
             <AppenderRef ref="RollingRandomAccessFile"/>
             <AppenderRef ref="databaseAppender"/>
         </Logger>
-        <Root level="ERROR" additivity="true">
+        <Root level="ERROR" additivity="false">
             <AppenderRef ref="Console"/>
         </Root>
     </Loggers>

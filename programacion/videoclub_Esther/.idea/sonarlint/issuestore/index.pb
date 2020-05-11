@@ -113,8 +113,6 @@ d
 4src/main/resources/fxml/ejercicio/verDatosAdmin.fxml,9\4\94dfcfd1988ba2b78ab992ab716142d0d4b103e0
 f
 6src/main/resources/fxml/ejercicio/verDatosUsuario.fxml,c\d\cdb47af7c2f28d00f2e7a86d5b12c3872df4e288
-W
-'src/main/resources/fxml/crearSocio.fxml,6\2\6269e2bec75a705ed6bfcc944f5decb206e8541d
 V
 &src/main/resources/fxml/principal.fxml,9\6\96a547f44bdf7c7b5975d9c7a3df85ebd7e9993c
 j
