@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane id="AnchorPane" fx:id="fxRoot" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="fx.controllers.PantallaInicioController">
+    <top>
+        <MenuBar fx:id="fxMenu" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Students">
+                    <items>
+                        <MenuItem fx:id="idGet" mnemonicParsing="false" onAction="#loadSceneGetStudents" text="Get"/>
+                        <MenuItem fx:id="idAdd" mnemonicParsing="false" onAction="#loadSceneAddStudents" text="Add"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Teachers">
+                    <items>
+                        <MenuItem fx:id="idGet1" mnemonicParsing="false" onAction="#loadSceneGetTeachers" text="Get"/>
+                        <MenuItem fx:id="idUpdate1" mnemonicParsing="false" onAction="#loadSceneUpdateTeachers"
+                                  text="Update"/>
+                        <MenuItem fx:id="idAdd1" mnemonicParsing="false" onAction="#loadSceneAddTeachers" text="Add"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+</BorderPane>
