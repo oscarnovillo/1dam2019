@@ -1,0 +1,4 @@
+rutaFicheros: ./ficheros/
+ficheroArmarios: armarios.json
+ficheroCasas: casas.json
+ficheroCasasArmarios: casasArmarios.json

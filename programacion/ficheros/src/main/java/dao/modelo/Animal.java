@@ -1,5 +1,10 @@
 package dao.modelo;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.beans.Transient;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Objects;
@@ -15,7 +20,32 @@ public class Animal implements Comparable,Guardable {
   public Animal() {
   }
 
-  public Animal(String nombre, int numeroPatas,LocalDate fecha) {
+  public String getNombre() {
+    return nombre;
+  }
+
+  public void setNombre(String nombre) {
+    this.nombre = nombre;
+  }
+
+  public int getNumeroPatas() {
+    return numeroPatas;
+  }
+
+  public void setNumeroPatas(int numeroPatas) {
+    this.numeroPatas = numeroPatas;
+  }
+
+  public LocalDate getBirth() {
+    return birth;
+  }
+
+  public void setBirth(LocalDate birth) {
+    this.birth = birth;
+  }
+
+
+  public Animal(String nombre,int numeroPatas, LocalDate fecha) {
     this.nombre = nombre;
     this.numeroPatas = numeroPatas;
     this.birth = fecha;
@@ -38,15 +68,13 @@ public class Animal implements Comparable,Guardable {
   public int compareTo(Object o) {
     int comparacion = 0;
     if (o instanceof Animal) {
-      comparacion = -1*this.nombre.compareTo(((Animal) o).nombre);
+      comparacion = this.nombre.compareTo(((Animal) o).nombre);
       if (comparacion == 0)
       {
-        comparacion  = -1*(this.numeroPatas -  ((Animal) o).numeroPatas);
+        comparacion  = (this.numeroPatas -  ((Animal) o).numeroPatas);
       }
     }
     return comparacion;
-    //dejal
-
 
   }
 
@@ -70,7 +98,7 @@ public class Animal implements Comparable,Guardable {
   @Override
   public String guardar() {
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-   return nombre + "," +numeroPatas+","+formatter.format(birth);
+    return nombre + "," +numeroPatas+","+formatter.format(birth);
   }
 
   @Override
@@ -79,6 +107,7 @@ public class Animal implements Comparable,Guardable {
 
     this.numeroPatas = Integer.parseInt(campos[1]);
     this.nombre = campos[0];
-    this.birth = LocalDate.parse(campos[2], DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+    this.birth = LocalDate.parse(campos[2],
+        DateTimeFormatter.ofPattern("dd/MM/yyyy"));
   }
 }

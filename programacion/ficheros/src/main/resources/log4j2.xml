@@ -35,9 +35,11 @@
     </Appenders>
 
     <Loggers>
-        <Logger name="mongo" level="TRACE" additivity="false">
-            <AppenderRef ref="RollingRandomAccessFile"/>
-            <AppenderRef ref="databaseAppender"/>
+        <Logger name="botones" level="INFO" additivity="false">
+            <AppenderRef ref="botones"/>
+        </Logger>
+        <Logger name="controller.Explorer" level="INFO" additivity="false">
+            <AppenderRef ref="botones"/>
         </Logger>
         <Root level="ERROR" additivity="false">
             <AppenderRef ref="Console"/>

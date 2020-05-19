@@ -9,6 +9,7 @@
       <Button layoutX="379.0" layoutY="84.0" mnemonicParsing="false" onAction="#cargar" text="Button" />
       <Button layoutX="379.0" layoutY="120.0" mnemonicParsing="false" onAction="#subir" text="Button" />
       <Button layoutX="379.0" layoutY="160.0" mnemonicParsing="false" onAction="#cargarTexto" text="texto" />
-      <TextArea fx:id="textFile" prefHeight="200.0" prefWidth="200.0" layoutX="41.0" layoutY="234.0"/>
+      <TextArea fx:id="textFile" layoutX="41.0" layoutY="234.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="379.0" layoutY="234.0" onAction="#guardarTexto"  mnemonicParsing="false" text="guardararchi" />
    </children>
 </AnchorPane>

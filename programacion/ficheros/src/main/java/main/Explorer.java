@@ -17,10 +17,10 @@ public class Explorer extends Application {
 
   @Override
   public void start(Stage primaryStage) throws IOException {
-    System.setProperty("log4j.configurationFile", "log4j2.xml");
+    //System.setProperty("log4j.configurationFile", "log4j2.xml");
     FXMLLoader loaderMenu = new FXMLLoader(
-        getClass().getResource("/fxml/explorer.fxml"));
-    AnchorPane root = null;
+        getClass().getResource("/fxml/principal.fxml"));
+    BorderPane root = null;
 
       root = loaderMenu.load();
       Scene scene = new Scene(root);

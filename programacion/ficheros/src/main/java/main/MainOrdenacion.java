@@ -21,6 +21,8 @@ public class MainOrdenacion {
 
   public static void main(String[] args) {
       Set<Animal> animales = new TreeSet<>();
+
+
       Animal a = new Animal("z",2, LocalDate.of(2000,1,1));
       animales.add(a);
     animales.add(a);
@@ -44,16 +46,16 @@ public class MainOrdenacion {
     }
 
     Set<Guardable> animales2 = new TreeSet<>();
-
-    try {
-      Files.readAllLines(Paths.get("./animales.obj")).forEach(s -> {
-        Animal animal = new Animal();
-       animal.cargar(s);
-        animales2.add(animal);
-      });
-    } catch (IOException e) {
-
-    }
+//
+//    try {
+//      Files.readAllLines(Paths.get("./animales.obj")).forEach(s -> {
+//        Animal animal = new Animal();
+//       animal.cargar(s);
+//        animales2.add(animal);
+//      });
+//    } catch (IOException e) {
+//
+//    }
 
     animales2.forEach(System.out::println);
   }

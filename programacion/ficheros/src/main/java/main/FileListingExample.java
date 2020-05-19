@@ -27,7 +27,7 @@ public class FileListingExample  {
         if (Files.isDirectory(path))
         {
           try {
-            Files.list(Paths.get("hhh")).forEach(path1 -> System.out.println(path1));
+            Files.list(Paths.get(".")).forEach(path1 -> System.out.println(path1));
           } catch (IOException e) {
             logger.log(Level.SEVERE,e.getMessage(),e);
           }
