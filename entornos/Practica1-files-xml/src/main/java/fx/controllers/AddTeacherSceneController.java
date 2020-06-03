@@ -6,6 +6,7 @@ package fx.controllers;
  * and open the template in the editor.
  */
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
@@ -93,4 +94,8 @@ public class AddTeacherSceneController implements Initializable {
         alertInformacion.setHeaderText(null);
     }
 
+    public void hazAlgo(ActionEvent actionEvent) {
+
+        newNif.setText("despues de seleccionar");
+    }
 }

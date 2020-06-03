@@ -27,20 +27,21 @@ public class DaoArmario {
     if (armarios == null) {
       armarios = new ArrayList<>();
     }
-    a.setId(armarios.stream().mapToInt(value -> value.getId()).max().getAsInt() + 1);
+    
+    a.setId(armarios.stream().mapToInt(value -> value.getId()).max().orElse(0) + 1);
     armarios.add(a);
     this.guardarFichero(armarios);
   }
 
 
 
-  public void editarArmario(Armario a) {
+  public void editarArmario(Armario aTemp) {
     List<Armario> armarios = this.getTodosArmarios();
     if (armarios == null) {
       armarios = new ArrayList<>();
     }
-    armarios.remove(a);
-    armarios.add(a);
+    armarios.remove(aTemp);
+    armarios.add(aTemp);
 
     this.guardarFichero(armarios);
   }
@@ -60,6 +61,8 @@ public class DaoArmario {
     return armarios.stream().filter(armario -> armario.getId() == id)
         .findFirst().orElse(null);
   }
+
+
 
   public List<Armario> getAlgunosArmario(List<Integer> ids) {
     List<Armario> armarios = this.getTodosArmarios();

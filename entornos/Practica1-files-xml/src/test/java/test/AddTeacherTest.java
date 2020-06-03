@@ -7,6 +7,7 @@ import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
@@ -112,6 +113,20 @@ public class AddTeacherTest {
         assertTrue(rootController.getControllerAddTeacher().getAlertInformacion().getAlertType().equals(Alert.AlertType.INFORMATION));
         assertTrue(rootController.getControllerAddTeacher().getAlertInformacion().getContentText().equals("New teacher saved"));
         robot.clickOn("#alertOK");
+    }
+
+
+    @Test
+    @Order(3)
+    void testRadioButtons(FxRobot robot)
+    {
+
+        System.out.println(((RadioButton) robot.lookup("#r1").query()).getText());
+        ((RadioButton) robot.lookup("#r2").query()).setSelected(true);
+        robot.clickOn("#r2");
+        robot.sleep(5000);
+
+
     }
 
 

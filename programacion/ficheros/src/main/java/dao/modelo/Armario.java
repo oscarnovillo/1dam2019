@@ -13,6 +13,7 @@ public class Armario {
   private List<Ropa> prendas;
   private Cajonera cajonera;
 
+
   @Override
   public boolean equals(Object o) {
     if (this == o) {

@@ -1,1 +1,8 @@
-[]
+[
+  {"id": 8,"direccion": "kk",
+    "armarios":[{"id":16,"ubicacion":"kkk","size":300,"prendas":[{"talla":"M","tipo":"pantalones"},{"talla":"M","tipo":"polo de pijo"}],"cajonera":{"numCajones":3,"alto":50,"ancho":50}}]
+  },
+  {"id": 9,"direccion": "kk",
+    "armarios": [{"id":16,"ubicacion":"kkk","size":300,"prendas":[{"talla":"M","tipo":"pantalones"},{"talla":"M","tipo":"polo de pijo"}],"cajonera":{"numCajones":3,"alto":50,"ancho":50}}]
+  }
+]

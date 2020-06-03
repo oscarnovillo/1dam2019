@@ -59,8 +59,6 @@ X
 (src/main/java/gui/conf/StartupScene.java,c\7\c7b60fd83f3341cd4015961fb22bafe933bb6add
 X
 (src/main/java/gui/controllers/Chart.java,8\b\8bfbcf9279a8d015b62ef3445be16d7cb680a40d
-U
-%src/main/resources/META-INF/beans.xml,e\8\e828918b03c044d16fb0afc5e75dea9467bb7645
 W
 'src/test/java/dao/DaoProductosTest.java,3\3\33d67f2570bb65e4b27f3b33de40fd23ae96e5a4
 R

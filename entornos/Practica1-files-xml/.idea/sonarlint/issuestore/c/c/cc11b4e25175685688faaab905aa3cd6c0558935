@@ -1,4 +1,7 @@
 
-Asquid:S1068"*Remove this unused "inicio" private field.(ÜìÉ›
-lsquid:S1450"URemove the "inicio" field and declare it as a local variable in the relevant methods.(ÜìÉ›
-_squid:UselessImportCheck"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8×‰èóÖ-
+G
+java:S1068"*Remove this unused "inicio" private field.(ÜìÉ›8’«¾¢.
+Q
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8’«¾¢.
+r
+java:S1450"URemove the "inicio" field and declare it as a local variable in the relevant methods.(ÜìÉ›8’«¾¢.

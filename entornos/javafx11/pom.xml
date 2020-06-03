@@ -20,7 +20,7 @@
         <repository>
             <id>nexus-snapshots</id>
             <name>nexus</name>
-            <url>https://1fef79f87b6d.ngrok.io/repository/snapshots/</url>
+            <url>https://0c75844db33e.ngrok.io/repository/snapshots/</url>
         </repository>
     </repositories>
 
@@ -67,11 +67,14 @@
             <version>1.26</version>
         </dependency>
 
+
+
     </dependencies>
 
     <build>
         <plugins>
 
+            <!-- jar para ejecturar -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
@@ -255,7 +258,7 @@
                                         <limit>
                                             <counter>LINE</counter>
                                             <value>COVEREDRATIO</value>
-                                            <minimum>0%</minimum>
+                                            <minimum>80%</minimum>
                                         </limit>
                                     </limits>
                                 </rule>
@@ -264,6 +267,8 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!-- copia de ficheros -->
             <plugin>
                 <artifactId>maven-resources-plugin</artifactId>
                 <version>3.1.0</version>
@@ -305,6 +310,8 @@
 
             </plugin>
 
+
+            <!-- deploy de en servidor externo -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-deploy-plugin</artifactId>
@@ -334,6 +341,7 @@
                 </configuration>
             </plugin>
 
+            <!-- generar jar de fuentes -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
@@ -347,6 +355,8 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!-- generar javadoc -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
@@ -364,6 +374,8 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!-- dependency plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
@@ -383,6 +395,7 @@
                 </configuration>
             </plugin>
 
+            <!-- plugin para hacer el site -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
@@ -392,7 +405,7 @@
                 </configuration>
             </plugin>
 
-
+            <!-- tareas ant -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-antrun-plugin</artifactId>
@@ -491,7 +504,6 @@
                                 <configuration>
                                     <target name="copy and rename des file">
                                         <copy file="${basedir}/config/config.des.yaml" overwrite="true" force="true" tofile="${basedir}/config/config.yaml" />
-
                                     </target>
                                 </configuration>
                                 <goals>

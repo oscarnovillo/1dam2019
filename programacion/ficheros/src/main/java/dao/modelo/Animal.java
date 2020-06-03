@@ -13,6 +13,8 @@ public class Animal implements Comparable,Guardable {
 
   private String nombre;
 
+  private String rutaFoto;
+
   private int numeroPatas;
 
   private LocalDate birth;

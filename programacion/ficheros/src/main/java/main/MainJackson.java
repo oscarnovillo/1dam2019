@@ -3,6 +3,7 @@ package main;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import config.Config;
 import dao.modelo.Animal;
 import dao.modelo.Armario;
 import dao.modelo.Cajonera;

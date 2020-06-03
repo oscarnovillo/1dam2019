@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
-<?import javafx.scene.layout.AnchorPane?>
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1"
-            xmlns="http://javafx.com/javafx/10.0.1" fx:controller="fx.controllers.AddTeacherSceneController">
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.controllers.AddTeacherSceneController">
     <children>
-        <Label layoutX="109.0" layoutY="79.0" text="Nif :"/>
-        <Label layoutX="109.0" layoutY="122.0" text="Name :"/>
+        <Label layoutX="109.0" layoutY="79.0" text="Nif :" />
+        <Label layoutX="109.0" layoutY="122.0" text="Name :" />
 
-        <TextField fx:id="newNif" layoutX="208.0" layoutY="75.0"/>
-        <TextField fx:id="newName" layoutX="208.0" layoutY="118.0"/>
+        <TextField fx:id="newNif" layoutX="208.0" layoutY="75.0" />
+        <TextField fx:id="newName" layoutX="208.0" layoutY="118.0" />
 
 
-        <Button fx:id="fxBtAdd" layoutX="311.0" layoutY="364.0" mnemonicParsing="false" onAction="#addTeacher" text="Add"/>
+        <Button fx:id="fxBtAdd" layoutX="311.0" layoutY="364.0" mnemonicParsing="false" onAction="#addTeacher" text="Add" />
+      <RadioButton fx:id="r2" layoutX="128.0" layoutY="200.0" onAction="#hazAlgo" mnemonicParsing="false" text="r2">
+         <toggleGroup>
+            <ToggleGroup fx:id="toogle" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="r1" layoutX="243.0" layoutY="200.0" mnemonicParsing="false" text="r1" toggleGroup="$toogle" />
 
     </children>
 </AnchorPane>

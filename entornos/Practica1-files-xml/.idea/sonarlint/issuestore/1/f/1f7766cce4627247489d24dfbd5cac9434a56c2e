@@ -1,5 +1,5 @@
 
-Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(­ˆ†©8áêî×-
-jsquid:S1450"URemove the "inicio" field and declare it as a local variable in the relevant methods.(ÜìÉ›
-_squid:S1155">Use isEmpty() to check whether the collection is empty or not.(–­ı´úÿÿÿÿ8ù¬Ïî×-
-?squid:S1068"*Remove this unused "inicio" private field.(ÜìÉ›
+r
+java:S1450"URemove the "inicio" field and declare it as a local variable in the relevant methods.(ÜìÉ›8Ê†®¾¢.
+G
+java:S1068"*Remove this unused "inicio" private field.(ÜìÉ›8Ê†®¾¢.

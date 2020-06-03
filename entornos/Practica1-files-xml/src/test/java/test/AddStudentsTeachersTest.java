@@ -126,7 +126,11 @@ public class AddStudentsTeachersTest{
 
     //when
     robot.interact(() -> {
-      lista.getSelectionModel().select(teacher);}
+      lista.getOnAction().handle(null);
+
+      lista.getSelectionModel().select(teacher);
+
+    }
     );
     //Platform.runLater(() -> );
 
@@ -136,6 +140,7 @@ public class AddStudentsTeachersTest{
     //Then
 
     assertTrue(teacher.getStudents().contains(listaStudents.getSelectionModel().getSelectedItem()));
+
   }
 
 

@@ -1,3 +1,5 @@
 
-lsquid:S1450"URemove the "inicio" field and declare it as a local variable in the relevant methods.(ÜìÉ›
-Asquid:S1068"*Remove this unused "inicio" private field.(ÜìÉ›
+G
+java:S1068"*Remove this unused "inicio" private field.(ÜìÉ›8’«¾¢.
+r
+java:S1450"URemove the "inicio" field and declare it as a local variable in the relevant methods.(ÜìÉ›8’«¾¢.

@@ -70,8 +70,8 @@ public class InicioTest {
     @Order(1)
     public void loginCorrecto(FxRobot robot) {
         //Given
-        robot.lookup("#fxUsuario").queryText().setText("root");
-        robot.lookup("#fxPass").queryText().setText("root");
+        robot.lookup("#fxUsuario").queryTextInputControl().setText("root");
+        robot.lookup("#fxPass").queryTextInputControl().setText("root");
 
         //when
         robot.clickOn("#fxBotonLogin");
@@ -87,6 +87,7 @@ public class InicioTest {
         //Given
 
         ((TextField) robot.lookup("#fxUsuario").query()).setText("root");
+
         ((TextField) robot.lookup("#fxPass").query()).setText("rsst");
 
         //when
